@@ -1,0 +1,31 @@
+/*
+	Reference: tutorial video from Paul Brokenshire for IAT339
+*/
+
+@font-face {
+	font-family: 'Raleway';
+	font-weight: lighter;
+	font-style: normal;
+	src: url('../font/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	font-weight: lighter;
+	font-style: italic;
+	src: url('../font/Raleway-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../font/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	font-weight: normal;
+	font-style: italic;
+	src: url('../font/Raleway-Italic.ttf') format('truetype');
+}
