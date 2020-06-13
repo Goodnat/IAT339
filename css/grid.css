@@ -44,7 +44,7 @@ div.order-summary div.container {
 .container-item {
 	-webkit-flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
+	flex: 1 1 0;
 }
 
 .container-item-3 {
@@ -72,11 +72,41 @@ div.order-summary div.container {
 	flex: 9 1 auto;
 }
 
+/* Index.html */
+.index1, .index2, .index4{
+	min-height: 960px;
+	text-align: center;
+	align-items: center;
+}
 
+.index3{
+	min-height: 300px;
+	align-items: center;
+	background-color: rgb(243, 205, 35);
+}
 
+.index5{
+	min-height: 600px;
+	align-items: center;
+	text-align: center;
+}
 
+<<<<<<< Updated upstream
+.index1 .container-item , .index2 .container-item , .index4 .container-item{
+	align-items: center;
+}
 
+.index5 .container-item{
+	padding:4em;
+}
 
+/* About.html */
+
+.about1{
+	min-height: 960px;
+	text-align: center;
+	align-items: center;
+=======
 
 
 
