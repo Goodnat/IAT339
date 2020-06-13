@@ -1,0 +1,77 @@
+/*
+* References: 
+* 1. Tutorial videos from Paul Brokenshire for IAT339
+* 2. "A Guide to Flexbox": http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* Parent */
+
+.container,
+.top-nav ul {
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	-webkit-justify-content: space-evenly;
+	-ms-justify-content: space-evenly;
+	justify-content: space-evenly;
+}
+
+.top-nav ul {
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	padding: 0;
+}
+
+
+
+/* Child */
+
+.container-item {
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.container-item-3 {
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
+}
+
+.container-item-full {
+	-webkit-flex: 0 0 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+}
+
+.container-item,
+.container-item-3,
+.container-item-full {
+	padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
