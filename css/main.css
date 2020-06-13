@@ -11,6 +11,10 @@ nav ul {
 	text-transform: uppercase;
 }
 
+nav li {
+	padding: padding: 1rem 0.5rem 0 0.5rem;
+}
+
 nav.top-nav a:active, 
 nav.top-nav a:hover, 
 nav.top-nav a:focus {
@@ -145,9 +149,9 @@ button:active, button:hover, button:focus {
 	border-width: 2px;
 }
 
-/*home page*/
+/* home page */
 
-.index-first-img{
+.index-first-img {
 	width:100%;
 }
 
