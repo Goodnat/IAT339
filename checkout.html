@@ -28,6 +28,94 @@
 		</header>
 	    
         <!-- Page Content -->
+        <div class="container">
+
+        	<!-- Billing Details -->
+        	<div class="container-item">
+        		<h2>Billing Details</h2>
+        		<form method="post" action="#">
+
+        			<label for="first-name">First Name</label>
+        			<input type="text" id="first-name">
+        			<label for="last-name">Last Name</label>
+        			<input type="text" id="last-name"><br>
+
+        			<label for="address">Street address</label>
+        			<input type="text" id="address"><br>
+
+        			<label for="city">City</label>
+        			<input type="text" id="city" value="Burnaby"><br>
+
+        			<label for="province">Province</label>
+        			<input type="text" id="province" value="BC">
+        			<label for="country-region">Country/Region</label>
+        			<input type="text" id="country-region" value="Canada"><br>
+
+        			<label for="postal-code">Postal code</label>
+        			<input type="text" id="postal-code"><br>
+
+        			<label for="phone">Phone number</label>
+        			<input type="text" id="phone"><br>
+
+        			<label for="email">Email</label>
+        			<input type="email" id="email"><br>
+
+        		</form>
+        	</div>
+
+
+        	<div class="container-item">
+
+        		<!-- Order Summary -->
+    			<div class="order-summary">
+					<h2>Order summary</h2>
+					<!-- Change this class -->
+					<div class="container space-between"> 
+						<p class="container-item">Product 01</p>
+						<p class="container-item right-align">$ 00.00</p>
+					</div>
+					<div class="container space-between">
+						<p class="container-item">Product 02</p>
+						<p class="container-item right-align">$ 00.00</p>
+					</div>
+					<div class="container space-between">
+						<p class="container-item">Subtotal</p>
+						<p class="container-item right-align">$ 00.00</p>
+					</div>
+					<div class="container space-between">
+						<p class="container-item">Tax</p>
+						<p class="container-item right-align">TBD</p>
+					</div>
+					<div class="container space-between">
+						<p class="container-item">Shipping</p>
+						<p class="container-item right-align">$ 0.00</p>
+					</div>
+					<hr />
+					<div class="container space-between">
+						<p class="container-item"><em>Total</em></p>
+						<p class="container-item right-align"><em>$ 00.00</em></p>
+					</div>
+				</div>
+
+        		<!-- Payment -->
+        		<div>
+        			<h2>Payment</h2>
+        			<form method="post" action="#">
+        				<label for="card-number">Card number</label>
+        				<input type="text" id="card-number"><br>
+
+        				<label for="expiry-date">Expiry date</label>
+        				<input type="text" id="expiry-date" placeholder="MM/YY">
+        				<label for="security-code">Security code</label>
+        				<input type="text" id="security-code" placeholder="000">
+
+        			</form>
+        		</div>
+
+        		<a href="#" class="button-1" role="button"><span>Place an order</span></a>
+        	</div>
+
+        </div>
 
 		<!-- Footer -->
 		<footer class="container">
