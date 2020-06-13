@@ -29,3 +29,27 @@
 	font-style: italic;
 	src: url('../font/Raleway-Italic.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'Raleway';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../font/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	font-weight: bold;
+	font-style: italic;
+	src: url('../font/Raleway-MediumItalic.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
