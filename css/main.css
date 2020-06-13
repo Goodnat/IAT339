@@ -11,10 +11,6 @@ nav ul {
 	text-transform: uppercase;
 }
 
-.top-nav li {
-	padding: padding: 1rem 0.5rem 0 0.5rem;
-}
-
 nav.top-nav a:active, 
 nav.top-nav a:hover, 
 nav.top-nav a:focus {
@@ -136,6 +132,11 @@ a {
 label {
 	display: block;
 	padding-bottom: 0.5rem;
+}
+
+input {
+	padding-bottom: 
+	border: 1px solid rgb(0,0,0);
 }
 
 button {

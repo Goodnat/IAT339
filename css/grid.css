@@ -25,6 +25,12 @@
 	justify-content: space-evenly;
 }
 
+div.order-summary div.container {
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+}
+
 .top-nav ul {
 	-webkit-align-items: center;
 	-ms-align-items: center;
