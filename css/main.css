@@ -145,6 +145,11 @@ button:active, button:hover, button:focus {
 	border-width: 2px;
 }
 
+/*home page*/
+
+.index-first-img{
+	width:100%;
+}
 
 /*************************** For Mobile Screen ***************************/
 
