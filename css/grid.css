@@ -108,8 +108,12 @@ div.order-summary div.container {
 	align-items: center;
 =======
 
-
-
+/* Products.html */
+.product1,.product2,.product3,.product4{
+  min-height: 960px;
+  text-align: center;
+  align-items: center;
+}
 
 
 
