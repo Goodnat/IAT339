@@ -180,9 +180,14 @@ button:active, button:hover, button:focus {
 /* Checkout page */
 
 div.billing-details,
+div.summary-and-payment {
+  margin-top: 5%;
+}
+
+div.billing-details,
 div.order-summary-details,
 div.payment {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5%;
 }
 
 div.billing-details {
@@ -233,27 +238,42 @@ div.input-with-arrow img:focus {
   right: 0;
 }
 
-.contact {
-  margin-bottom: 2.5rem;
-}
-
 .contact1, .location, .contact3 {
   margin-bottom: 8%;
+}
+
+.contact1 {
+  margin-top: 5%;
 }
 
 .location .three-fourths img {
   max-height: 37.5rem; /* 600px */
 }
 
+@media (max-width: 480px) {
+    .contact {
+    margin-bottom: 2.5rem;
+  }
+}
 
 /* Shop all page */
+
+.shop_all_container {
+  margin-top: 5%;
+}
+
 .shop_all_container h2 {
   padding-left: 1rem;
 }
 
 /* Product details */
 
-.product-container{
+.product-page-title {
+  margin-top: 5%;
+  padding-left: 1rem;
+}
+
+.product-container {
   display:flex;
   flex-wrap: wrap;
   width:100%;
@@ -272,13 +292,28 @@ div.input-with-arrow img:focus {
   padding: 5em;
 }
 
-.product-right{
-  width:50%;
-  border:1px solid black;
+.product-right {
+  width: 50%;
+  border: 1px solid black;
+
+  display: -webkit-flex; 
+  display: -ms-flex;
   display:flex;
-  justify-content: center;
-  align-items: center;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 2%;
 }
 
 .product-item{
@@ -337,7 +372,7 @@ select{
   margin-bottom: 5em;
 }
 
-.product-right a{
+/*.product-right a{
   font-family: 'Raleway-Light', sans-serif;
   font-size:12px;
   font-weight: normal;
@@ -351,9 +386,9 @@ select{
 .product-right a:hover{
   background-color: black;
   color: white;
-}
+}*/
 
-/*detail.html_review item*/
+/* detail.html_review item */
 .prodcut-review{
   margin:2em;
 
@@ -412,7 +447,7 @@ select{
 }
 
 
-/*index.html*/
+/* Home page */
 .index1 img,.index4 img, .about1 img{
 	width:100%;
 	height:100%;
