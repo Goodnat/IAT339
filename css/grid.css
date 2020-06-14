@@ -65,23 +65,23 @@ div.order-summary div.container {
 	flex: 9 1 auto;
 }
 
-/* Index.html */
-.index1, .index2, .index4{
-	min-height: 960px;
+/* Index page */
+
+.index1, .index2,
+.index3 .left,
+.index4, .index5 {
 	text-align: center;
 }
 
-.index3{
-	min-height: 300px;
+.index3 {
+	padding: 5%;
 	background-color: rgb(243, 205, 35);
 }
 
-.index5{
-	min-height: 600px;
-	text-align: center;
+.index5 .container-item {
+	padding: 3%;
 }
 
-/****** Updated upstream ******/
 .index1, .index2, .index3,
 .index4, .index5,
 .index1 .container-item, 
@@ -92,8 +92,19 @@ div.order-summary div.container {
 	align-items: center;
 }
 
-.index5 .container-item{
-	padding:4em;
+.index1 .container-item,
+.index4 .container-item {
+	padding: 0;
+}
+
+.index1 .text, 
+.index4 .text {
+	padding: 0 2%;
+}
+
+.index1, .index2, 
+.index4, .index5 {
+	margin-bottom: 8%;
 }
 
 /* About page */
@@ -103,18 +114,15 @@ div.order-summary div.container {
 	-ms-align-items: center;
 	align-items: center;
 
-	min-height: 960px;
 	text-align: center;
+}
+
+.about1 .container-item {
+	padding: 0;
 }
 
 
 /* Contact page */
-
-.half {
-	-webkit-flex: 1 1 50%;
-	-ms-flex: 1 1 50%;
-	flex: 1 1 50%;
-}
 
 .three-fourths {
 	-webkit-flex: 0 1 75%;
@@ -122,7 +130,6 @@ div.order-summary div.container {
 	flex: 0 1 75%;
 }
 
-.half,
 .three-fourths {
 	padding: 1rem;
 }
@@ -133,14 +140,20 @@ div.order-summary div.container {
 	align-items: flex-end;
 }
 
+.contact3 {
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+}
 
 
-/* Products.html */
+/* Shop/Products page */
+
 .product1 .container-item,
 .product2 .container-item,
 .product3 .container-item {
-  min-height: 960px;
-  text-align: center;
+	margin-bottom: 5%;
+  	text-align: center;
 }
 
 
