@@ -229,16 +229,10 @@ div.location {
 }
 
 
-/* Home page */
+/* home page */
 
 .index-first-img {
 	width:100%;
-}
-
-/* Shop/Product page */
-
-.shop_all_container h2 {
-	padding-left: 1rem;
 }
 
 /*************************** For Mobile Screen ***************************/
