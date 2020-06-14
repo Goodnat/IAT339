@@ -42,15 +42,9 @@ div.order-summary div.container {
 /* Child */
 
 .container-item {
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 0;
-}
-
-.container-item-3 {
-	-webkit-flex: 3 1 auto;
-	-ms-flex: 3 1 auto;
-	flex: 3 1 auto;
+	-webkit-flex: 1 1;
+	-ms-flex: 1 1;
+	flex: 1 1;
 }
 
 .container-item-full {
@@ -59,8 +53,9 @@ div.order-summary div.container {
 	flex: 0 0 100%;
 }
 
+.half,
 .container-item,
-.container-item-3,
+.three-fourths,
 .container-item-full {
 	padding: 1rem;
 }
@@ -72,48 +67,34 @@ div.order-summary div.container {
 	flex: 9 1 auto;
 }
 
-/* Index.html */
-.index1, .index2, .index4{
-	min-height: 960px;
-	text-align: center;
-	align-items: center;
+/* Contact page */
+
+.half {
+	-webkit-flex: 1 1 50%;
+	-ms-flex: 1 1 50%;
+	flex: 1 1 50%;
 }
 
-.index3{
-	min-height: 300px;
-	align-items: center;
-	background-color: rgb(243, 205, 35);
+.three-fourths {
+	-webkit-flex: 0 1 75%;
+	-ms-flex: 0 1 75%;
+	flex: 0 1 75%;
 }
 
-.index5{
-	min-height: 600px;
-	align-items: center;
-	text-align: center;
+.location {
+	-webkit-align-items: flex-end;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
 }
 
-<<<<<<< Updated upstream
-.index1 .container-item , .index2 .container-item , .index4 .container-item{
-	align-items: center;
-}
 
-.index5 .container-item{
-	padding:4em;
-}
 
-/* About.html */
 
-.about1{
-	min-height: 960px;
-	text-align: center;
-	align-items: center;
-=======
 
-/* Products.html */
-.product1,.product2,.product3,.product4{
-  min-height: 960px;
-  text-align: center;
-  align-items: center;
-}
+
+
+
+
 
 
 
