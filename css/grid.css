@@ -47,11 +47,11 @@ div.order-summary div.container {
 	flex: 1 1 0;
 }
 
-.container-item-3 {
+/*.container-item-3 {
 	-webkit-flex: 3 1 auto;
 	-ms-flex: 3 1 auto;
 	flex: 3 1 auto;
-}
+}*/
 
 .container-item-full {
 	-webkit-flex: 0 0 100%;
@@ -60,7 +60,6 @@ div.order-summary div.container {
 }
 
 .container-item,
-.container-item-3,
 .container-item-full {
 	padding: 1rem;
 }
@@ -91,7 +90,7 @@ div.order-summary div.container {
 	text-align: center;
 }
 
-<<<<<<< Updated upstream
+/****** Updated upstream ******/
 .index1 .container-item , .index2 .container-item , .index4 .container-item{
 	align-items: center;
 }
@@ -106,13 +105,42 @@ div.order-summary div.container {
 	min-height: 960px;
 	text-align: center;
 	align-items: center;
-=======
+}
+
+
+/* Contact page */
+
+.half {
+	-webkit-flex: 1 1 50%;
+	-ms-flex: 1 1 50%;
+	flex: 1 1 50%;
+}
+
+.three-fourths {
+	-webkit-flex: 0 1 75%;
+	-ms-flex: 0 1 75%;
+	flex: 0 1 75%;
+}
+
+.half,
+.three-fourths {
+	padding: 1rem;
+}
+
+.location {
+	-webkit-align-items: flex-end;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+}
+
+
 
 /* Products.html */
-.product1,.product2,.product3,.product4{
+.product1 .container-item,
+.product2 .container-item,
+.product3 .container-item {
   min-height: 960px;
   text-align: center;
-  align-items: center;
 }
 
 

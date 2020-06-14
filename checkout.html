@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IAT339 P02</title>
+        <title>Checkout</title>
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -31,34 +31,44 @@
         <div class="container">
 
         	<!-- Billing Details -->
-        	<div class="container-item">
+        	<div class="container-item billing-details">
         		<h2>Billing Details</h2>
         		<form method="post" action="#">
 
         			<label for="first-name">First Name</label>
         			<input type="text" id="first-name">
         			<label for="last-name">Last Name</label>
-        			<input type="text" id="last-name"><br>
+        			<input type="text" id="last-name">
 
         			<label for="address">Street address</label>
-        			<input type="text" id="address"><br>
+        			<input type="text" id="address">
 
         			<label for="city">City</label>
-        			<input type="text" id="city" value="Burnaby"><br>
+        			<div class="input-with-arrow">
+	        			<input type="text" id="city" value="Burnaby">
+	        			<img src="img/arrow-down.png" alt="Click it to see more options.">
+	        		</div>
 
         			<label for="province">Province</label>
-        			<input type="text" id="province" value="BC">
+        			<div class="input-with-arrow">
+        				<input type="text" id="province" value="BC">
+        				<img src="img/arrow-down.png" alt="Click it to see more options.">
+	        		</div>
+
         			<label for="country-region">Country/Region</label>
-        			<input type="text" id="country-region" value="Canada"><br>
+        			<div class="input-with-arrow">
+        				<input type="text" id="country-region" value="Canada">
+        				<img src="img/arrow-down.png" alt="Click it to see more options.">
+	        		</div>
 
         			<label for="postal-code">Postal code</label>
-        			<input type="text" id="postal-code"><br>
+        			<input type="text" id="postal-code">
 
         			<label for="phone">Phone number</label>
-        			<input type="text" id="phone"><br>
+        			<input type="text" id="phone">
 
         			<label for="email">Email address</label>
-        			<input type="email" id="email"><br>
+        			<input type="email" id="email">
 
         		</form>
         	</div>
@@ -69,43 +79,48 @@
         		<!-- Order Summary -->
     			<div class="order-summary">
 					<h2>Order summary</h2>
-					<!-- Change this class -->
-					<div class="container"> 
-						<p class="container-item">Product 01</p>
-						<p class="container-item right-align">$ 00.00</p>
-					</div>
-					<div class="container">
-						<p class="container-item">Product 02</p>
-						<p class="container-item right-align">$ 00.00</p>
-					</div>
-					<div class="container">
-						<p class="container-item">Subtotal</p>
-						<p class="container-item right-align">$ 00.00</p>
-					</div>
-					<div class="container">
-						<p class="container-item">Tax</p>
-						<p class="container-item right-align">TBD</p>
-					</div>
-					<div class="container">
-						<p class="container-item">Shipping</p>
-						<p class="container-item right-align">$ 0.00</p>
-					</div>
-					<hr />
-					<div class="container">
-						<p class="container-item"><em>Total</em></p>
-						<p class="container-item right-align"><em>$ 00.00</em></p>
-					</div>
-				</div>
+					
+					<div class="order-summary-details">	
+
+						<div class="container"> 
+							<p class="container-item">Product 01</p>
+							<p class="container-item right-align">$ 00.00</p>
+						</div>
+						<div class="container">
+							<p class="container-item">Product 02</p>
+							<p class="container-item right-align">$ 00.00</p>
+						</div>
+						<div class="container">
+							<p class="container-item">Subtotal</p>
+							<p class="container-item right-align">$ 00.00</p>
+						</div>
+						<div class="container">
+							<p class="container-item">Tax</p>
+							<p class="container-item right-align">TBD</p>
+						</div>
+						<div class="container">
+							<p class="container-item">Shipping</p>
+							<p class="container-item right-align">$ 0.00</p>
+						</div>
+						<hr />
+						<div class="container">
+							<p class="container-item total"><em>Total</em></p>
+							<p class="container-item right-align total"><em>$ 00.00</em></p>
+						</div>
+
+					</div> <!-- End of .order-summary-details -->
+				</div> <!-- End of .order-summary -->
 
         		<!-- Payment -->
-        		<div>
+        		<div class="payment">
         			<h2>Payment</h2>
         			<form method="post" action="#">
         				<label for="card-number">Card number</label>
-        				<input type="text" id="card-number"><br>
+        				<input type="text" id="card-number">
 
         				<label for="expiry-date">Expiry date</label>
         				<input type="text" id="expiry-date" placeholder="MM/YY">
+        				
         				<label for="security-code">Security code</label>
         				<input type="text" id="security-code" placeholder="000">
 
