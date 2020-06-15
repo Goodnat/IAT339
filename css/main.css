@@ -226,6 +226,33 @@ div.input-with-arrow img:focus {
   transform: rotate(-180deg);
 }
 
+.tooltip img {
+  width: 20px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 7.5rem; /* 120px */
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+
+
 /* Contact page */
 
 .contact-form {
