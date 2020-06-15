@@ -35,6 +35,12 @@ img {
   width: 100%;
 }
 
+hr {
+  height: 1px;
+  background-color: rgb(0,0,0);
+  border: none;
+}
+
 /* Headings */
 
 h1, h2, h3, h4, p, li {
@@ -226,32 +232,32 @@ div.input-with-arrow img:focus {
   transform: rotate(-180deg);
 }
 
+/* Tooltip */
 .tooltip img {
-  width: 20px;
+  width: 1.25rem;
 }
 
 .tooltip {
   position: relative;
-  display: inline-block;
 }
 
 .tooltip-text {
   visibility: hidden;
-  width: 7.5rem; /* 120px */
+  max-width: 20rem;
   background-color: black;
   color: white;
   border-radius: 0.5rem;
   padding: 0.5rem;
 
   position: absolute;
+  top: -0.5rem;
+  left: 11rem;
   z-index: 1;
 }
 
 .tooltip:hover .tooltip-text {
   visibility: visible;
 }
-
-
 
 /* Contact page */
 

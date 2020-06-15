@@ -32,7 +32,7 @@
 
         	<!-- Billing Details -->
         	<div class="container-item billing-details">
-        		<h2>Billing Details</h2>
+        		<h2>Shipping Address</h2>
         		<form method="post" action="#">
 
         			<label for="first-name">First Name</label>
@@ -121,11 +121,12 @@
         				<label for="expiry-date">Expiry date</label>
         				<input type="text" id="expiry-date" placeholder="MM/YY">
         				
-        				<label for="security-code">Card security code</label>
-        				<div class="toolkit">
+        				<div class="tooltip">
+        					<label for="security-code">Card security code
         					<img src="img/question.png" alt="What's security number?">
-        					<span class="toolkit-text">
-        						The card security code (CSC) is usually a 3 - or 4 - digit number, which is typically printed on the back of a credit card (usually in the signature field).
+        					</label>
+        					<span class="tooltip-text">
+        						It's usually a 3- or 4- digit number printed on the back of a credit card (usually in the signature field).
         					</span>
         				</div>
         				<input type="text" id="security-code" placeholder="000">
