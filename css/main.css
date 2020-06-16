@@ -16,7 +16,7 @@ nav.top-nav a:hover,
 nav.top-nav a:focus {
 	font-weight: bold;
 	font-style: italic;
-	border-bottom: 2px solid #081428;
+	border-bottom: 2px solid black;
 }
 
 .nav-icon, .h1-mobile {
@@ -328,7 +328,7 @@ div.select-size {
 }*/
 
 .product-left {
-  height: 60rem;
+  height: 40rem;
   overflow: scroll;
 }
 
