@@ -346,6 +346,10 @@ img.security-code {
   margin-top: 5%;
 }
 
+.contact2 {
+  border: 0;
+}
+
 .location .three-fourths img {
   max-height: 37.5rem; /* 600px */
 }
