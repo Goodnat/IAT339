@@ -362,8 +362,8 @@ div.select-size {
 }*/
 
 .product-left {
-  height: 40rem;
-  overflow: scroll;
+  height: 38rem;
+  overflow:scroll;
 }
 
 /* detail.html_review item */
@@ -389,6 +389,7 @@ div.select-size {
   height: 30rem;
   overflow: scroll;
   padding: 0 5%;
+  margin-right: 20em;
 }
 
 .review-overall-2 {
