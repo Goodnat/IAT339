@@ -324,7 +324,6 @@ img.security-code {
 
 .location .button-1,
 .contact3 .button-1 {
-  width: 100%;
   margin-top: 5%;
 }
 
@@ -416,9 +415,20 @@ div.select-size {
 }
 
 /* Home page */
+
 .index1 img,.index4 img, .about1 img {
 	width:100%;
 	height:100%;
+}
+
+.index2 .button-1 {
+  margin-top: 5%;
+}
+
+@media (max-width: 980px) {
+  .button-1 {
+    width: 100%;
+  }
 }
 
 
