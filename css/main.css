@@ -6,17 +6,63 @@ body {
 }
 
 /* Top Navigation */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0;
+}
+
+nav img{
+  width:3rem;
+}
+
 nav ul {
 	list-style-type: none;
 	text-transform: uppercase;
 }
 
-nav.top-nav a:active, 
-nav.top-nav a:hover, 
-nav.top-nav a:focus {
-	font-weight: bold;
-	font-style: italic;
-	border-bottom: 2px solid black;
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.top-nav ul li a{
+  position:relative;
+  z-index: 1;
+}
+ 
+nav.top-nav ul li a:hover{
+  color: #91640F;
+}
+
+nav.top-nav ul li a:after{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #ffe2bc;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav.top-nav ul li :hover:after{
+  opacity: 1;
+  visibility: visible;
+  height: 2rem;
+  width:2rem;
 }
 
 .nav-icon, .h1-mobile {
