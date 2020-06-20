@@ -144,6 +144,7 @@ a {
   font-weight: 100;
   padding: 20px;
   text-transform: uppercase;
+  border-radius: 6px;
   display: inline-block;
   transition: all 0.4s ease 0s;
   width:50%;
@@ -153,7 +154,8 @@ a {
   font-weight: 700;
   background: none;
   letter-spacing: 3px;
-
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.4s ease 0s;
   }
 /* Within Form */
