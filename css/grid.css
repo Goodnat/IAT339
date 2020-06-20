@@ -121,11 +121,15 @@ div.order-summary div.container {
 	text-align: center;
 }
 
-.about1 .container-item {
-	padding: 0;
+
+
+.about2 {
+	height:50%;
 }
 
-
+.about2 .container-item{
+	padding:10rem;
+} 
 /* Contact page */
 
 .three-fourths {
