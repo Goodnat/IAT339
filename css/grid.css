@@ -236,6 +236,61 @@ div.order-summary div.container {
 	flex: 1 1;
 }
 
+.products-single{
+  flex-basis:23%;
+  /*border:1px solid pink;*/
+  line-height:180%;
+}
+
+.products-single img{
+  width:100%;
+}
+
+.products-single-image{
+  overflow:visible;
+  /*border:1px solid red;*/
+
+}
+
+.products-single-image img{
+  transition: transform 0.5s;
+}
+
+
+.products-single-thumbnail a{
+   display:inline-block;
+   width:20px;
+   height:20px;
+   margin-right:1em;
+   margin-bottom: 1em;
+}
+
+.products-single-thumbnail a:nth-child(1){
+   background-image: url(.../img/perfume2.jpg);
+   display:block;
+   border: 1px solid red;
+   width:50px;
+   height:50px;
+
+}
+
+.products-single-thumbnail a:nth-child(2){
+   background-image: url(.../img/perfume8.jpg);
+   display:block;
+   border: 1px solid red;
+   width:50px;
+   height:50px;
+}
+
+.products-single-thumbnail a:nth-child(3){
+   background-image: url(.../img/perfume10.jpg);
+   display:block;
+   border: 1px solid red;
+   width:50px;
+   height:50px; 
+}
+
+
 
 
 

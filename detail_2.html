@@ -1,46 +1,73 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Product Detail</title>
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/grid.css">
-	</head>
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grid.css">
 
-	<body>
+        <script>
+  function changePics(i){
+     if (i == 1){
+        document.getElementById("single-product-image").src="img/perfume6.jpg"
+     }else if (i == 2){
+        document.getElementById("single-product-image").src="img/img7.jpg"
+     }else if (i == 3){
+        document.getElementById("single-product-image").src="img/img5.jpg"
+     }
+     
+  }
 
-		<!-- Top Navigation Bar -->
-		<header>
-			<nav class="top-nav">
-				<ul>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="products.html">SHOP</a></li>
-					<li><h1><a href="index.html">P.F</a></h1></li>
-					<li><a href="contact.html">CONTACT</a></li>
-					<li><a href="checkout.html">CART(0)</a></li>
-				</ul>
-			</nav>
-			<h1 class="h1-mobile"><a href="#">Perfume</a></h1>
-			<a href="#"><img src="img/hamburger-icon.png" class="nav-icon" alt="click to see navigation bar"></a>
-		</header>
-	    
+</script>
+    </head>
+
+    <body>
+
+        <!-- Top Navigation Bar -->
+        <header>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><h1><a href="index.html">P.F</a></h1></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="checkout.html">CART(0)</a></li>
+                </ul>
+            </nav>
+            <h1 class="h1-mobile"><a href="#">Perfume</a></h1>
+            <a href="#"><img src="img/hamburger-icon.png" class="nav-icon" alt="click to see navigation bar"></a>
+        </header>
+        
         <!-- Page Content -->
 
-        <!-- Product images, size options and prices -->
+
+        <!-- Product thumbnail images-->
         <div class="container product">
+        <div class="products-single-thumbnail">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
 
             <!-- Product images -->
-			<div class="container-item product-left">
-				<img src="img/perfume6.jpg" alt="Perfume" >
-				<img src="img/img7.jpg" alt="Perfume" >
-				<img src="img/img5.jpg" alt="Perfume" >
-			</div>
-	
+            <div class="container-item product-left">
+                <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="img/perfume6.jpg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      
+      
+    </div>
+                
+            </div>
+    <!-- Product images, size options and prices -->
             <div class="container-item product-right">
-				<h2>OR/2018</h2>
+                <h2>OR/2018</h2>
                 <p>Hypnotic combination of exotic and intimate notes by David Apel.</p>
 
                 <!-- Select a size -->
@@ -62,7 +89,6 @@
                   <p>HEART:Cannabis Accord / Myrrh / Night Blooming Jasmine</p>
                   <p>BASE:Vanilla Crème / Tonka / Driftwood</p>
                   </div>
-                
 
                 <!-- Buttons -->
                 <a href="#" class="button-1 add-to-bag" role="button">
@@ -75,16 +101,15 @@
                      Add to wishlist
                 </a>
 
-                
-			</div> <!-- End of .product-right -->
+            </div> <!-- End of .product-right -->
 
-		</div>
+        </div>
 
 
         <!-- Customer reviews -->
-		<div class="prodcut-review">
+        <div class="prodcut-review">
 
-			<div class="container review-intro">
+            <div class="container review-intro">
 
                 <div class="container-item average-ratings">
                     <h4>Average Customer Ratings</h4> 
@@ -111,11 +136,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus ullamcorper orci, non ornare magna rutrum sit amet.</p>
                 </div>
 
-	        </div>
+            </div>
 
             <div class="container">
 
-		        <div class="review-bottom">
+                <div class="review-bottom">
                     <div class="review-overall-2">
                         <div class="review-overall-2-left">
                             <p>User name</p>
@@ -242,8 +267,8 @@
         </div>
  
 
-		<!-- Footer -->
-		<footer class="container">
+        <!-- Footer -->
+        <footer class="container">
             <div class="container-item">
                 <h3>FOLLOW US</h3>
                 <ul>
@@ -266,7 +291,7 @@
                 </form>
             </div>
         </footer>
-		
+        
 
-	</body>
+    </body>
 </html>

@@ -379,8 +379,8 @@ div.select-size {
 }*/
 
 .product-left {
-  height: 38rem;
-  overflow:scroll;
+  height: 40rem;
+  overflow:initial;
 }
 
 /* detail.html_review item */

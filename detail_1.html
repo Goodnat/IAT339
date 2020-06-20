@@ -8,6 +8,22 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grid.css">
+
+        <script>
+  function changePics(i){
+     if (i == 1){
+        document.getElementById("single-product-image").src="img/perfume2.jpg"
+     }else if (i == 2){
+        document.getElementById("single-product-image").src="img/perfume8.jpg"
+     }else if (i == 3){
+        document.getElementById("single-product-image").src="img/perfume10.jpg"
+     }else if (i == 0){
+        document.getElementById("single-product-image").src="img/perfume2.jpg"
+     }
+     
+  }
+
+</script>
 	</head>
 
 	<body>
@@ -29,17 +45,29 @@
 	    
         <!-- Page Content -->
 
-        <!-- Product images, size options and prices -->
+        <!-- Product thumbnail images-->
+        
         <div class="container product">
+        <div class="products-single-thumbnail">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
 
             <!-- Product images -->
 			<div class="container-item product-left">
-				<img src="img/perfume2.jpg" alt="Perfume" >
-                <img src="img/img2.png" alt="Perfume" >
-				<img src="img/img1.jpeg" alt="Perfume" >
+				<div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="img/perfume2.jpg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      
+      
+    </div>
 				
 			</div>
-	
+	    <!-- Product images, size options and prices -->
             <div class="container-item product-right">
 				<h2>FR/2018</h2>
 				<p>Inspired by the resurgence of classic gin cocktails by Carlos Viñals</p>
