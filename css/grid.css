@@ -73,6 +73,10 @@ div.order-summary div.container {
 	text-align: center;
 }
 
+.index2 .container-item{
+	padding:5rem;
+}
+
 .index3 {
 	padding: 5%;
 	background-color: #ffe2bc;
@@ -117,11 +121,15 @@ div.order-summary div.container {
 	text-align: center;
 }
 
-.about1 .container-item {
-	padding: 0;
+
+
+.about2 {
+	height:50%;
 }
 
-
+.about2 .container-item{
+	padding:5%;
+} 
 /* Contact page */
 
 .three-fourths {

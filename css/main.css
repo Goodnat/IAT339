@@ -78,6 +78,10 @@ footer.container {
   margin-bottom: 5%;*/
 }
 
+footer.container {
+  padding: 2%;
+}
+
 img {
   width: 100%;
 }
@@ -148,7 +152,8 @@ a {
   border-radius: 6px;
   display: inline-block;
   transition: all 0.4s ease 0s;
-  width:50%;
+  width: 50%;
+  text-align: center;
 }
 .button-1:hover {
   color: black;
@@ -159,6 +164,7 @@ a {
   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.4s ease 0s;
   }
+
 /* Within Form */
 
 label {
@@ -172,7 +178,8 @@ input {
   border: 1px solid rgb(0,0,0);
   width: 100%;
 }
-/*Submit Buttons */
+
+/* Submit Buttons */
 button{
   color: #494949;
   text-transform: uppercase;
@@ -208,6 +215,10 @@ div.billing-details,
 div.order-summary-details,
 div.payment {
   margin-bottom: 5%;
+}
+
+a.place-an-order {
+  width: 100%;
 }
 
 div.billing-details {
@@ -309,6 +320,12 @@ img.security-code {
     .contact {
     margin-bottom: 2.5rem;
   }
+}
+
+.location .button-1,
+.contact3 .button-1 {
+  width: 100%;
+  margin-top: 5%;
 }
 
 /* Shop all page */

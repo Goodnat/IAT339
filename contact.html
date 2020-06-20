@@ -36,25 +36,25 @@
 	        	<form method="post" action="#" class="contact-form">
 
 	        		<label for="first-name">First Name</label>
-	    			<input type="text" id="first-name">
+	    			<input type="text" id="first-name" required>
 	    			<label for="last-name">Last Name</label>
-	    			<input type="text" id="last-name"><br>
+	    			<input type="text" id="last-name" required><br>
 
 	    			<label for="phone">Phone number</label>
 	    			<input type="text" id="phone"><br>
 
 	    			<label for="email">Email address</label>
-	    			<input type="email" id="email"><br>
+	    			<input type="email" id="email" required><br>
 
 	    			<label for="message">Message</label>
-	    			<input type="text" id="message"><br>
+	    			<input type="text" id="message" required><br>
 
 	    			<button>Submit</button>
 	        	</form>
         	</div>
 
         	<div class="container-item">
-        		<img src="img/img2.png" alt="contact" class="contact">
+        		<img src="img/img2.jpg" width="900" height="auto" alt="contact" class="contact">
         	</div>
 
         </div>
@@ -69,8 +69,11 @@
         	</div>
 
         	<div class="container-item img-caption">
-        		<h3>Lorem ipsum dolor</h3>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        		<h3>DISCOVER OUR STORE</h3>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        		<a href="products.html" class="button-1" role="button">
+                    <span>Show all</span>
+                </a>
         	</div>
 
         </div>
@@ -82,15 +85,21 @@
         	<div class="container-item"><img src="img/perfume2.jpg" alt="Alt text"></div>
 
         	<div class="container-item">
-        		<h3>Lorem ipsum dolor</h3>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        		<h3>FR/2018</h3>
+        		<p>Carlos Viñals</p>
+        		<a href="detail_1.html" class="button-1" role="button">
+                    <span>Shop now</span>
+                </a>
         	</div>
 
         	<div class="container-item"><img src="img/perfume6.jpg" alt="Alt text"></div>
 
         	<div class="container-item">
-        		<h3>Lorem ipsum dolor</h3>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        		<h3>FL/2018</h3>
+        		<p>Nathalie Benareau</p>
+        		<a href="detail_2.html" class="button-1" role="button">
+                    <span>Shop now</span>
+                </a>
         	</div>
         	
         </div>
@@ -98,11 +107,28 @@
 
 		<!-- Footer -->
 		<footer class="container">
-			<div class="container-item"></div>
-			<div class="container-item"></div>
-			<div class="container-item"></div>
+			<div class="container-item">
+				<h3>FOLLOW US</h3>
+				<ul>
+					<li>INSTARGAM</li>
+					<li>FACEBOOK</li>
+					<li>TWITTER</li>
+				</ul>	
+			</div>
+
+			<div class="container-item">
+
+			</div>
+
+			<div class="container-item">
+				<h3>JOIN US</h3>			
+				<form method="post" action="#">
+					<label for="email">Email: </label>
+					<input type="email" id="email" placeholder="xxx@gmail.com">
+					<button>Submit</button>
+				</form>
+			</div>
 		</footer>
 		
-
 	</body>
 </html>
