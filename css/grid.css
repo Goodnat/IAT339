@@ -73,6 +73,10 @@ div.order-summary div.container {
 	text-align: center;
 }
 
+.index2 .container-item{
+	padding:5rem;
+}
+
 .index3 {
 	padding: 5%;
 	background-color: #ffe2bc;
