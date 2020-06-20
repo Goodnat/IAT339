@@ -70,7 +70,7 @@ nav.top-nav ul li :hover:after{
 }
 
 header.container,
-footer.container {
+footer {
   background-color: #EFEFEF;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -78,8 +78,13 @@ footer.container {
   margin-bottom: 5%;*/
 }
 
-footer.container {
+footer {
   padding: 2%;
+}
+
+footer .resources p {
+  text-align: center;
+  display: inline-block;
 }
 
 img {
@@ -206,10 +211,10 @@ button:hover{
 
 /* Checkout page */
 
-div.billing-details,
+/*div.billing-details,
 div.summary-and-payment {
   margin-top: 5%;
-}
+}*/
 
 div.billing-details,
 div.order-summary-details,
@@ -304,12 +309,9 @@ img.security-code {
   margin-bottom: 8%;
 }
 
-.contact1 {
-  margin-top: 5%;
-}
-
-.contact2 {
+.location iframe {
   border: 0;
+  width: 100%;
 }
 
 .location .three-fourths img {
@@ -328,10 +330,6 @@ img.security-code {
 }
 
 /* Shop all page */
-
-.shop_all_container {
-  margin-top: 5%;
-}
 
 .shop_all_container h2 {
   padding-left: 1rem;
@@ -431,6 +429,20 @@ div.select-size {
   }
 }
 
+/* Citation and Style Guide pages */
+
+section.citation {
+  border-bottom: 1px solid black;
+}
+
+.in-text_link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.in-text_link:hover {
+  text-decoration: none;
+}
 
 /*************************** For Mobile Screen ***************************/
 

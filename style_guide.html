@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Style Guide</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css">    
+	</head>
+
+	<body>
+
+		<!-- Page content -->
+		<p><a href="index.html" class="in-text_link">&lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;BACK TO WEBSITE</a></p>
+
+		<div>
+			<h1>Style guide</h1>
+
+			<p class="padding-32 content-block">Our git repository: <a href="https://github.com/Goodnat/lab02" target="_blank" class="in-text_link">https://github.com/Goodnat/lab02</a></p>
+
+			<!-- Site map -->
+			<div id="site-map" class="content-block">
+				<h3>Site-map</h3>
+				<img src="img/site_map.png" alt="site-map">
+			</div>
+
+			<!-- Basic interactive elements -->
+			<div class="content-block">
+				<h3>Basic Interactive Elements</h3>
+
+				<!-- in-text link -->
+				<section class="container padding-32">
+					<h4 class="container-item">An in-text link:</h4>
+					<div class="container-item example">
+						<p>This is an <a href="#" class="in-text_link">in-text link</a>.</p>
+					</div>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;p&gt;This is an &lt;a href="#" class="in-text_link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;
+					</code>
+				</section>
+
+				<!-- call-to-action button -->
+				<section class="container">
+					<h4 class="container-item">A call-to-action button:</h4>
+					<div class="container-item example">
+						<a href="#" class="button-1" role="button"><span>Buy it now</span></a>
+						<a href="#" class="button-2" role="button">Add to bag</a>
+					</div>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;a href="#" class="button-1" role="button"&gt;&lt;span&gt;Button one&lt;/span&gt;&lt;/a&gt;<br>
+						&lt;a href="#" class="button-2" role="button"&gt;Button two&lt;/a&gt;
+					</code>
+				</section>
+
+				<!-- submit and reset button for forms -->
+				<section class="container">
+					<h4 class="container-item">A submit and reset button for forms:</h4>
+					<div class="container-item example">
+						<form action="/" method="post">
+							<button>SUBMIT</button>
+							<button type="reset">RESET</button>
+						</form>
+					</div>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;form action="/" method="post"&gt;<br>
+						&nbsp;&lt;button&gt;Submit&lt;/button&gt;<br>
+						&nbsp;&lt;button type="reset"&gt;Reset&lt;/button&gt;<br>
+						&lt;/form&gt;
+					</code>
+				</section>
+
+				<!-- text input and its label -->
+				<section class="container">
+					<h4 class="container-item">A text input field and a label: </h4>
+					<div class="container-item example">
+						<label for="name">Name:</label>		
+						<input type="text" id="name" placeholder="Mike">
+					</div>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;label for="name"&gt;Name:	&lt;/label&gt;<br>
+						&lt;input type="text" id="name" placeholder="Mike"&gt;
+					</code>
+				</section>
+
+				<!-- website colour swatches -->
+				<section class="container">
+					<h4 class="container-item">Website colour swatches: </h4>
+					<div class="container-item-2">
+						<div class="container example">
+							<div class="color-box light-orange">
+								<h4>Light orange</h4>
+								<p>#FFD8A6</p>
+								<p>rgb( 255, 216, 166)</p>
+							</div>
+							<div class="color-box normal-orange">
+								<h4>Normal Orange</h4>
+								<p>#FFA852</p>
+								<p>rgb( 255, 168, 82)</p>
+							</div>
+							<div class="color-box light-grey">
+								<h4>Light grey</h4>
+								<p>#CCCCCC</p>
+								<p>rgb( 204, 204, 204)</p>
+							</div>
+							<div class="color-box black">
+								<h4>Black</h4>
+								<p>#000000</p>
+								<p>rgb( 0, 0, 0)</p>
+							</div>
+						</div>
+					</div> <!-- end of .container-item-2 -->
+				</section> <!-- end of 'website colour swatches' -->
+
+			</div> <!-- end of 'Basic interactive elements' -->
+
+
+			<!-- Text styling -->
+			<div class="content-block">
+				<h3>Text Styling</h3>
+
+				<!-- typography -->
+				<section class="container padding-32">
+					<h4 class="container-item">Typography:</h4>
+					<div class="container-item">
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+						<p>Paragraph</p>
+					</div>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+						&lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+						&lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+						&lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+						&lt;p&gt;Paragraph&lt;/p&gt;
+					</code>
+				</section>
+
+				<!-- bulleted lists -->
+				<section class="container">
+					<h4 class="container-item">Bulleted lists: </h4>
+					<ul class="bulleted_list container-item">
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ul>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;ul class="bulleted_list"&gt;<br>
+						&nbsp;&lt;li&gt;List item&lt;/li&gt;<br>
+						&nbsp;&lt;li&gt;List item&lt;/li&gt;<br>
+						&nbsp;&lt;li&gt;List item&lt;/li&gt;<br>
+						&lt;ul&gt;
+					</code>
+				</section>
+
+				<!-- numbered lists -->
+				<section class="container">
+					<h4 class="container-item">Numbered lists: </h4>
+					<ol class="numbered_list container-item">
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item</li>
+					</ol>
+					<code class="container-item html code-box">
+						HTML:<br>
+						&lt;ol class="numbered_list"&gt;<br>
+						&nbsp;&lt;li&gt;List item&lt;/li&gt;<br>
+						&nbsp;&lt;li&gt;List item&lt;/li&gt;<br>
+						&nbsp;&lt;li&gt;List item&lt;/li&gt;<br>
+						&lt;/ol&gt;
+					</code>
+				</section>
+
+			</div> <!-- end of 'Text styling' -->
+
+
+			<!-- Modular pattern elements -->
+			<div class="content-block">
+				<h3>Modular Pattern Elements</h3>
+				
+				<section class="padding-32">
+					<h4>Module: Top navigation</h4>
+
+					<header class="container">
+						<nav class="top-nav">
+							<ul>
+								<li><a href="#">ABOUT</a></li>
+								<li><a href="#">SHOP</a></li>
+								<li><h1><a href="#">Perfume</a></h1></li>
+								<li><a href="#">CONTACT</a></li>
+								<li><a href="#">CART(0)</a></li>
+							</ul>
+						</nav>
+						<h1 class="h1-mobile"><a href="#">Perfume</a></h1>
+						<a href="#"><img src="img/hamburger-icon.png" class="nav-icon" alt="click to see navigation bar"></a>
+					</header>
+
+					<div class="container">
+
+						<code class="container-item html">
+							HTML:<br>
+							&lt;header class="container"&gt;<br>
+							&nbsp;&lt;nav class="top-nav"&gt;<br>
+							&nbsp;&nbsp;&lt;ul&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;Perfume&lt;/h1&gt;&lt;/a&gt;&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Cart(0)&lt;/a&gt;&lt;/li&gt;<br>
+							&nbsp;&nbsp;&lt;/ul&gt;<br>
+							&nbsp;&lt;/nav&gt;<br>
+							&nbsp;&lt;a href="#" class="container-item"&gt;&lt;img src="img/hamburger-icon.png" class="nav-icon" alt="click to see navigation bar"&gt;&lt;/a&gt;<br>
+							&lt;/header&gt;<br>
+						</code>
+
+						<code class="container-item css">
+							Grid CSS:<br>
+							@media (max-width: 480px) &#123;<br>
+							&nbsp;header a.container-item &#123;<br>
+							&nbsp;&nbsp;padding-right: 0.5rem;<br>
+							&nbsp;&nbsp;-webkit-flex-basis: 0;<br>
+							&nbsp;&nbsp;-ms-flex-basis: 0;<br>
+							&nbsp;&nbsp;flex-basis: 0;<br>
+							&nbsp;&#125;<br>
+							&#125;<br>
+							<br>
+							Style CSS:<br>
+							nav ul &#123;<br>
+							&nbsp;list-style-type: none;<br>
+							&nbsp;text-transform: uppercase;<br>
+							&#125;<br>
+							<br>
+							nav.top-nav a:active,<br>
+							nav.top-nav a:hover,<br>
+							nav.top-nav a:focus &#123;<br>
+							&nbsp;font-weight: bold;<br>
+							&nbsp;font-style: italic;<br>
+							&nbsp;border-bottom: 2px solid #081428;<br>
+							&#125;<br>
+							<br>
+							.nav-icon &#123;<br>
+							&nbsp;display: none;<br>
+							&#125;<br>
+							<br>
+							@media (max-width: 480px) &#123;<br>
+							&nbsp;h1.title &#123;<br>
+							&nbsp;&nbsp;padding-left: 0.5rem;<br>
+							&nbsp;&#125;<br>
+							&nbsp;.top-nav &#123;<br>
+							&nbsp;&nbsp;display: none;<br>
+							&nbsp;&#125;<br>
+							&nbsp;.nav-icon &#123;<br>
+							&nbsp;&nbsp;display: block;<br>
+							&nbsp;&nbsp;width: 3.5rem;<br>
+							&nbsp;&#125;<br>
+							&#125;
+						</code>
+
+					</div> <!-- end of code container -->
+				</section> <!-- end of top navigation module -->
+
+				<section>
+					<h4>Module: Product detailed listing</h4>
+
+					<div class="container example">
+
+						<div class="container-item">
+							<img src="img/placeholder.jpg" class="product-img" alt="product image">
+						</div>
+
+						<div class="container-item-2">
+							<h3>Product name <span><img src="img/love.png" class="icon" alt="add to wishlist"></span></h3>
+							<p><a href="#" class="link_with_underline">Customer Reviews</a></p>
+							<p class="padding-16">Color: </p>
+							<div class="container left-align-items">
+								<p class="container-item tile">01</p>
+								<p class="container-item tile">02</p>
+								<p class="container-item tile">03</p>
+							</div>
+							<p class="padding-16">Size: </p>
+							<div class="container left-align-items">
+								<p class="container-item tile">XS</p>
+								<p class="container-item tile">S</p>
+								<p class="container-item tile">M</p>
+								<p class="container-item tile">L</p>
+								<p class="container-item tile">XL</p>
+							</div>
+							<h3 class="right-align padding-96">$ 00.00</h3>
+							<p class="right-align">Latest sale events.</p>
+
+							<div class="container">
+								<a href="#" class="container-item button-2" role="button">Add to bag</a>
+								<a href="#" class="container-item button-1" role="button"><span>Buy it now</span></a>
+							</div>
+
+						</div> <!-- end of .container-item-2  -->
+					</div> <!-- end of .example -->
+
+					<div class="container">
+					<code class="container-item html">
+						HTML:<br>
+						&lt;div class="container"&gt;<br>
+						<br>
+						&nbsp;&lt;div class="container-item"&gt;<br>
+						&nbsp;&nbsp;&lt;img src="img/placeholder.png" class="product-img" alt="product image"&gt;<br>
+						&nbsp;&lt;/div&gt;<br>
+						<br>
+						&nbsp;&lt;div class="container-item-2"&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;h3&gt;Product name &lt;span&gt;&lt;img src="img/love.png" class="icon" alt="add to wishlist"&gt;&lt;/span&gt;&lt;/h3&gt;<br>
+							&nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link_with_underline"&gt;Customer Reviews&lt;/a&gt;&lt;/p&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;p class="padding-16"&gt;Color: &lt;/p&gt;<br>
+							&nbsp;&nbsp;&lt;div class="container left-align-items"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;01&lt;/p&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;02&lt;/p&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;03&lt;/p&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;p class="padding-16"&gt;Size: &lt;/p&gt;<br>
+							&nbsp;&nbsp;&lt;div class="container left-align-items"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;XS&lt;/p&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;S&lt;/p&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;M&lt;/p&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;L&lt;/p&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;XL&lt;/p&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;h3 class="right-align padding-96"&gt;$ 00.00&lt;/h3&gt;<br>
+							&nbsp;&nbsp;&lt;p class="right-align"&gt;Latest sale events.&lt;/p&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;a href="#" class="container-item button-2" role="button"&gt;Add to bag +&lt;/a&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;a href="#" class="container-item button-1" role="button"&gt;Buy it now &#8594;&lt;/a&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							<br>
+						&nbsp;&lt;/div&gt;<br>
+						<br>
+						&lt;/div&gt;<br>
+					</code>
+
+					<code class="container-item css">
+						Grid CSS:<br>
+						.container &#123;<br>
+						&nbsp;display&#58; -webkit-flex&#59;<br>
+						&nbsp;display&#58; -ms-flex&#59;<br>
+						&nbsp;display&#58; flex&#59;<br>
+						<br>
+						&nbsp;-webkit-flex-wrap&#58; wrap&#59;<br>
+						&nbsp;-ms-flex-wrap&#58; wrap&#59;<br>
+						&nbsp;flex-wrap&#58; wrap&#59;<br>
+						<br>
+						&nbsp;-webkit-justify-content&#58; space-around&#59;<br>
+						&nbsp;-ms-justify-content&#58; space-around&#59;<br>
+						&nbsp;justify-content&#58; space-around&#59;<br>
+						<br>
+						&nbsp;margin&#58; 0&#59;<br>
+						&#125;<br>
+						<br>
+						.left-align-items &#123;<br>
+						&nbsp;-webkit-justify-content: flex-start;<br>
+						&nbsp;-ms-justify-content: flex-start;<br>
+						&nbsp;justify-content: flex-start;<br>
+						&#125;<br>
+						<br>
+						.container-item &#123;<br>
+						&nbsp;-webkit-flex&#58; 1 1 auto&#59;<br>
+						&nbsp;-ms-flex&#58; 1 1 auto&#59;<br>
+						&nbsp;flex&#58; 1 1 auto&#59;<br>
+						&nbsp;padding&#58; 1rem&#59;<br>
+						&#125;<br>
+						<br>
+						.container-item-2 &#123;<br>
+						&nbsp;-webkit-flex&#58; 2 1 auto&#59;<br>
+						&nbsp;-ms-flex&#58; 2 1 auto&#59;<br>
+						&nbsp;flex&#58; 2 1 auto&#59;<br>
+						&nbsp;padding&#58; 1rem&#59;<br>
+						&#125;<br>
+						<br>
+						p.tile &#123;<br>
+						&nbsp;-webkit-flex&#58; 0 0 3.5em&#59;<br>
+						&nbsp;-ms-flex&#58; 0 0 3.5em&#59;<br>
+						&nbsp;flex&#58; 0 0 3.5em&#59;<br>
+						&nbsp;margin-top&#58; 0.5rem&#59;<br>
+						&nbsp;padding&#58; 1rem&#59;<br>
+						&#125;<br>
+						<br>
+						Style CSS:<br>
+						img.product-img &#123;<br>
+						&nbsp;width&#58; 100%&#59;<br>
+						&#125;<br>
+						<br>
+						img.icon &#123;<br>
+						&nbsp;width&#58; 1.5rem&#59;<br>
+						&#125;<br>
+						<br>
+						a.link_with_underline &#123;<br>
+						&nbsp;font-size&#58; 1rem&#59;<br>
+						&nbsp;text-decoration&#58; underline&#59;<br>
+						&#125;<br>
+						<br>
+						.tile &#123;<br>
+						&nbsp;display&#58; inline-block&#59;<br>
+						&nbsp;border&#58; 1px solid #081428&#59;<br>
+						&nbsp;margin-right&#58; 1.25rem&#59;<br>
+						&nbsp;text-align&#58; center&#59;<br>
+						&#125;<br>
+						<br>
+						.right-align &#123;<br>
+						&nbsp;text-align&#58; right&#59;<br>
+						&#125;<br>
+						<br>
+						.padding-16 &#123;<br>
+						&nbsp;padding-top&#58; 1rem&#59;<br>
+						&#125;<br>
+						<br>
+						.padding-96 &#123;<br>
+						&nbsp;padding-top&#58; 6rem&#59;<br>
+						&#125;
+					</code>
+					</div>
+
+				</section> <!-- end of product detailed listing -->
+
+				<section>
+					<h4>Website grid structure: </h4>
+					
+					<div class="grid-structure">
+						<p>Landing Page Template</p>
+						<div class="container-item-full block-180">Header</div>
+						<div class="container">
+							<div class="container-item block-500">Image</div>
+							<div class="container-item block-500">Text</div>
+						</div>
+						<div class="container">
+							<div class="container-item block-300">Image-01</div>
+							<div class="container-item block-300">Image-02</div>
+							<div class="container-item block-300">Image-03</div>
+						</div>
+						<div class="container-item-full block-180">Subscription Form</div>
+						<div class="container">
+							<div class="container-item block-500">Text</div>
+							<div class="container-item block-500">Image</div>
+						</div>
+						<div class="container">
+							<div class="container-item block-300">Intro-01</div>
+							<div class="container-item block-300">Intro-02</div>
+							<div class="container-item block-300">Intro-03</div>
+						</div>
+						<div class="container-item-full block-180">Footer</div>
+						
+						<code class="html">
+							HTML:<br>
+							&lt;div class="container-item-full block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;Image&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;Text&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-300"&gt;Image-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-300"&gt;Image-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-300"&gt;Image-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="container-item-full block-180"&gt;Subscription Form&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;Text&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;Image&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-300"&gt;Intro-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-300"&gt;Intro-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-300"&gt;Intro-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="container-item-full block-180"&gt;Footer&lt;/div&gt;<br>
+						</code>
+					</div>
+
+					<div class="grid-structure">
+						<p>Product Browsing Page Template</p>
+						<div class="block-180">Header</div>
+						<div class="block-80">Featured events</div>
+						<div class="container">
+							<div class="container-item block-500">Side navigation</div>
+							<div class="container-item-9 block-500">Main content</div>
+						</div>
+						<div class="block-180">Footer</div>
+
+						<code class="html">
+							HTML:<br>
+							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="block-80"&gt;Featured events&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;Side navigation&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item-9 block-500"&gt;Main content&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="grid-structure" >
+						<p>Product Detail Page Template</p>
+						<div class="block-180">Header</div>
+						<div class="block-40">Breadcrumbs</div>
+						<div class="container">
+							<div class="container-item block-400">Product image</div>
+							<div class="container-item-2 block-400">Product details</div>
+						</div>
+						<div class="block-180">Related policies</div>
+						<div class="block-300">Recommendations</div>
+						<div class="block-180">Footer</div>
+
+						<code class="html">
+							HTML:<br>
+							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="block-40"&gt;Breadcrumbs&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-400"&gt;Product image&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item-2 block-400"&gt;Product details&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="block-180"&gt;Related policies&lt;/div&gt;<br>
+							&lt;div class="block-300"&gt;Recommendations&lt;/div&gt;<br>
+							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="grid-structure">
+						<p>Checkout Page Template</p>
+						<div class="block-180">Header</div>
+						<div class="container">
+							<div class="container-item block-400">Product listing</div>
+							<div class="container-item block-400">Order summary</div>
+						</div>
+						<div class="block-180">Footer</div>
+
+						<code class="html">
+							HTML:<br>
+							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-400"&gt;Product listing&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-400"&gt;Order summary&lt;/div&gt;
+							&lt;/div&gt;<br>
+							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="grid-structure">
+						<p>One-to-three-column Template</p>
+						<div class="block-180">Header</div>
+						<div class="container">
+							<div class="container-item block-400">Side content</div>
+							<div class="container-item-3 block-400">Main content</div>
+						</div>
+						<div class="block-180">Footer</div>
+
+						<code class="html">
+							HTML:<br>
+							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-400"&gt;Side content&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item-3 block-400"&gt;Main content&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="grid-structure">
+						<p>Three-column Template</p>
+						<div class="block-180">Header</div>
+						<div class="container">
+							<div class="container-item block-500">1st Column</div>
+							<div class="container-item block-500">2nd Column</div>
+							<div class="container-item block-500">3rd Column</div>
+						</div>
+						<div class="block-180">Footer</div>
+
+						<code class="html">
+							HTML:<br>
+							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;1st Column&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;2nd Column&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;3rd Column&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="grid-structure">
+						<p>Contact-us Template</p>
+						<div class="block-180">Header</div>
+
+						<div class="container center-align-items">
+							<div class="container-item block-500"></div>
+
+							<div class="container-item-4 block-500">
+								<div class="container">
+									<div class="container-item block-300">Company image</div>
+									<div class="container-item block-300">'Email Us' form</div>
+								</div>
+								<div class="block-40">Horizontal divider</div>
+								<div class="container">
+									<div class="container-item block-300">Map</div>
+									<div class="container-item block-300">'Working hours' table</div>
+								</div>
+							</div>
+
+							<div class="container-item block-500"></div>
+						</div>
+
+						<div class="block-40">Horizontal divider</div>
+
+						<div class="container">
+							<div class="container-item block-300">Information</div>
+							<div class="container-item block-300">Information</div>
+						</div>
+
+						<div class="block-180">Footer</div>
+
+						<code class="html">
+							HTML:<br>
+							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							<br>
+							&nbsp;&lt;div class="container-item block-500"&gt;&lt;/div&gt;<br>
+							<br>
+							&nbsp;&lt;div class="container-item-4 block-500"&gt;<br>
+								&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;div class="container-item block-300"&gt;Company image&lt;/div&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;div class="container-item-2 block-300"&gt;'Email Us' form&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;/div&gt;<br>
+								<br>
+								&nbsp;&nbsp;&lt;div class="block-40"&gt;Horizontal divider&lt;/div&gt;<br>
+								<br>
+								&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;div class="container-item block-300"&gt;Phone number&lt;/div&gt;<br>
+								&nbsp;&nbsp;&nbsp;&lt;div class="container-item-2 block-300"&gt;'Working hours' table&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;/div&gt;<br>
+								&nbsp;&lt;/div&gt;<br>
+								<br>
+								&nbsp;&lt;div class="container-item block-500"&gt;&lt;/div&gt;<br>
+							<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="block-180"&gt;Footer&lt;/div&gt;<br>
+						</code>
+					</div>
+
+				</section> <!-- end of website grid structure -->
+
+				<section>
+					<h4>Module: Shopping bag review</h4>
+
+					<div class="container space-between example">
+
+						<!-- Order details -->
+						<div class="container-item-4">
+
+							<div class="container">
+								<div class="container-item">
+									<img src="img/placeholder.jpg" class="product-img" alt="product thumbnail">
+								</div>
+								<div class="container-item-4">
+									<h3>Product name <span><img src="img/love.png" class="icon" alt="add to wishlist"></span></h3>
+									<p><a href="#" class="link_with_underline">Customer Reviews</a></p>
+									<div class="container">
+										<p class="container-item">Color: XX</p>
+										<p class="container-item">Size: M</p>
+										<p class="container-item">Amount: 1</p>
+										<p class="container-item">$ 00.00</p>
+									</div>
+									<p class="padding-96">X Remove</p>
+								</div>
+							</div>
+
+							<hr class="divider"/>
+
+							<div class="container">
+								<div class="container-item">
+									<img src="img/placeholder.jpg" class="product-img" alt="product thumbnail">
+								</div>
+								<div class="container-item-4">
+									<h3>Product name <span><img src="img/love.png" class="icon" alt="add to wishlist"></span></h3>
+									<p><a href="#" class="link_with_underline">Customer Reviews</a></p>
+									<div class="container">
+										<p class="container-item">Color: XX</p>
+										<p class="container-item">Size: M</p>
+										<p class="container-item">Amount: 1</p>
+										<p class="container-item">$ 00.00</p>
+									</div>
+									<p class="padding-96">X Remove</p>
+								</div>
+							</div>
+
+						</div> <!-- end of Order Detail -->
+
+						<!-- Order summary -->
+						<div class="container-item">
+
+							<div class="order-summary">
+								<h3>Order summary</h3>
+								<div class="container space-between">
+									<p class="container-item">Subtotal</p>
+									<p class="container-item right-align">$ 00.00</p>
+								</div>
+								<div class="container space-between">
+									<p class="container-item">Shipping estimate</p>
+									<p class="container-item right-align">$ 0.00</p>
+								</div>
+								<div class="container space-between">
+									<p class="container-item">Tax</p>
+									<p class="container-item right-align">TBD</p>
+								</div>
+								<hr />
+								<div class="container space-between">
+									<p class="container-item"><em>Total</em></p>
+									<p class="container-item right-align"><em>$ 00.00</em></p>
+								</div>
+							</div>
+
+							<a href="#" class="button-1" role="button"><span>Continue</span></a>
+							
+						</div> <!-- end of Order Summary -->
+					</div> <!-- end of Bag Review Module -->
+
+					<div class="container">
+					<code class="container-item html">
+						HTML:<br>
+						&lt;div class="container space-between example"&gt;<br>
+						<br>
+						&nbsp;&lt;!-- Order details --&gt;<br>
+						&nbsp;&lt;div class="container-item-4"&gt;<br>
+						<br>
+						&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container-item"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/placeholder.jpg" class="product-img"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container-item-4"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Product name &lt;span&gt;&lt;img src="img/love.png" class="icon"&gt;&lt;/span&gt;&lt;/h3&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link_with_underline"&gt;Customer Reviews&lt;/a&gt;&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Color: XX&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Size: M&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Amount: 1&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;$ 00.00&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="padding-96"&gt;X Remove&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;/div&gt;<br>
+						<br>
+						&nbsp;&nbsp;&lt;hr class="divider"/&gt;<br>
+						<br>
+						&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container-item"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/placeholder.jpg" class="product-img"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container-item-4"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Product name &lt;span&gt;&lt;img src="img/love.png" class="icon"&gt;&lt;/span&gt;&lt;/h3&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link_with_underline"&gt;Customer Reviews&lt;/a&gt;&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Color: XX&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Size: M&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Amount: 1&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;$ 00.00&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="padding-96"&gt;X Remove&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;/div&gt;<br>
+						<br>
+						&nbsp;&lt;/div&gt; &lt;!-- end of Order Detail --&gt;
+					</code>
+
+					<code class="container-item html">
+						&nbsp;&lt;!-- Order summary --&gt;<br>
+						&nbsp;&lt;div class="container-item"&gt;<br>
+						<br>
+						&nbsp;&nbsp;&lt;div class="order-summary"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;h3&gt;Order summary&lt;/h3&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Subtotal&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;$ 00.00&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Shipping estimate&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;$ 0.00&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Tax&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;TBD&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;hr /&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;&lt;em&gt;Total&lt;/em&gt;&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;&lt;em&gt;$ 00.00&lt;/em&gt;&lt;/p&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+						&nbsp;&nbsp;&lt;/div&gt;<br>
+						<br>
+						&nbsp;&nbsp;&lt;a href="#" class="button-1" role="button"&gt;&lt;span&gt;Continue&lt;/span&gt;&lt;/a&gt;<br>
+						<br>
+						&nbsp;&lt;/div&gt; &lt;!-- end of Order Summary --&gt;<br>
+						<br>
+					&lt;/div&lt; &lt;!-- end of Bag Review Module --&gt;<br>
+					</code>
+					</div> <!-- end of code section -->
+				</section> <!-- end of bag review module -->
+
+			</div> <!-- end of 'Modular pattern elements' -->
+
+		</div> <!-- end of Page content -->
+
+	</body>
+</html>

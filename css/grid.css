@@ -42,8 +42,8 @@ div.order-summary div.container {
 /* Child */
 
 .container-item {
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 0;
+	-ms-flex: 1 1 0;
 	flex: 1 1 0;
 }
 
@@ -292,6 +292,26 @@ div.order-summary div.container {
 
 
 
+/* Footer */
+
+.social-media {
+	margin: 2% 0;
+}
+
+.social-media img {
+	width: 2em;
+	display: inline-block;
+	margin: 0 5%;
+}
+
+.resources {
+	border-top: 1px solid black;
+	margin-top: 8%;
+}
+
+.resources p {
+	padding: 1rem;
+}
 
 
 
