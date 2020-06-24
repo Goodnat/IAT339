@@ -147,28 +147,43 @@ a {
 
 /* Call-to-action Buttons */
 
-.button-1{
-  border: none;
-  background: black;
+.button-1,.button-2 {
+  background-color: black;
   color: #ffffff;
   font-weight: 100;
-  padding: 20px;
+  padding: 1.25em;
   text-transform: uppercase;
   border-radius: 6px;
   display: inline-block;
   transition: all 0.4s ease 0s;
   width: 50%;
   text-align: center;
+  margin: 2% 0;
 }
-.button-1:hover {
+.button-2 {
   color: black;
-  font-weight: 700;
+  background-color: white;
+  border: 1.25px solid black;
+}
+.button-1:hover{
+  color: black;
   background: none;
+  font-weight: 700;
   letter-spacing: 3px;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.4s ease 0s;
-  }
+}
+.button-2:hover {
+  background: none;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
 
 /* Within Form */
 
@@ -185,36 +200,30 @@ input {
 }
 
 /* Submit Buttons */
-button{
-  color: #494949;
+button {
+  color: white;
+  background-color: black;
   text-transform: uppercase;
   text-decoration: none;
-  background: #ffffff;
   padding: 0.75rem;
   width: 50%;
-  border: 1px solid #494949;
+  border: 1px solid black;
   display: inline-block;
+  margin: 5% 0;
   transition: all 0.4s ease 0s;
 }
 
-button:hover{
-  color: #ffffff;
-  background:  black;
-  border-color: black;
+button:hover {
+  color: black;
+  background-color: white;
   transition: all 0.4s ease 0s;
 }
-
 
 .right-align {
   text-align: right;
 }
 
 /* Checkout page */
-
-/*div.billing-details,
-div.summary-and-payment {
-  margin-top: 5%;
-}*/
 
 div.billing-details,
 div.order-summary-details,
@@ -337,24 +346,8 @@ img.security-code {
 
 /* Product details */
 
-.add-to-wishlist img,
-.add-to-bag img {
-  width: 1.25rem;
-  position: relative;
-  top: 0.15rem;
-  right: 0.5rem;
-}
-
-.hover-img {
-  display: none;
-}
-
-.add-to-wishlist:hover .normal-img {
-  display: none;
-}
-
-.add-to-wishlist:hover .hover-img {
-  display: inline;
+.perfume-details {
+  margin-bottom: 5%;
 }
 
 div.select-size {
@@ -368,16 +361,6 @@ div.select-size {
 
 .size-and-price .container-item {
     padding-bottom: 0.25rem;
-}
-
-/*.product-page-title {
-  margin-top: 5%;
-  padding-left: 1rem;
-}*/
-
-.product-left {
-  height: 40rem;
-  overflow:initial;
 }
 
 /* detail.html_review item */
@@ -399,11 +382,9 @@ div.select-size {
 }
 
 .review-bottom {
-  /*border: 1px solid black;*/
   height: 30rem;
   overflow: scroll;
   padding: 0 5%;
-  margin-right: 20em;
 }
 
 .review-overall-2 {
@@ -424,10 +405,57 @@ div.select-size {
 }
 
 @media (max-width: 980px) {
-  .button-1 {
+
+  .button-1, .button-2, button {
     width: 100%;
   }
+
 }
+
+/*.product-single{
+  flex-basis:23%;
+  line-height:180%;
+}
+
+.product-single img{
+  width:70%;
+}
+
+@media (max-width: 980px){
+  .product-single img{
+    width:100%;
+    }   
+}*/
+
+/*.product-single-image{
+  overflow:visible;
+  border:1px solid red;
+}*/
+
+/*.product-single-thumbnail a:nth-child(1) {
+   background-image: url(".../img/perfume2.jpg");
+   display: block;
+   border: 1px solid red;
+   width: 50px;
+   height: 50px;
+
+}
+
+.product-single-thumbnail a:nth-child(2) {
+   background-image: url(.../img/perfume8.jpg);
+   display:block;
+   border: 1px solid red;
+   width:50px;
+   height:50px;
+}
+
+.product-single-thumbnail a:nth-child(3) {
+   background-image: url(.../img/perfume10.jpg);
+   display:block;
+   border: 1px solid red;
+   width:50px;
+   height:50px; 
+}*/
 
 /* Citation and Style Guide pages */
 

@@ -121,8 +121,6 @@ div.order-summary div.container {
 	text-align: center;
 }
 
-
-
 .about2 {
 	height:50%;
 }
@@ -174,11 +172,31 @@ div.order-summary div.container {
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
-	
+
+	margin-bottom: 8%;
 }
+
+.product-thumbnails {
+	-webkit-flex: 0 1 10rem;
+	-ms-flex: 0 1 10rem;
+	flex: 0 1 10rem;
+}
+
+.product-thumbnails a {
+   display: block;
+   width: 100%;
+   height: auto;
+   margin-bottom: 1rem;
+   margin-right: 1rem;
+}
+
 .product-left,
 .prodcut-right {
     padding: 0;
+}
+
+.product-left img {
+	width: 100%;
 }
 
 .product-right {
@@ -230,71 +248,33 @@ div.order-summary div.container {
 }
 
 .review-overall-2-left,
-.review-overall-2-right {
+.review-overall-2-right,
+.write-review {
 	-webkit-flex: 1 1;
 	-ms-flex: 1 1;
 	flex: 1 1;
 }
 
-.products-single{
-  flex-basis:23%;
-  /*border:1px solid pink;*/
-  line-height:180%;
+.write-review textarea {
+	width: 100%;
+	padding: 0.5em;
+	color: gray;
+	border: 1px solid black;
 }
 
-.products-single img{
-  width:70%;
+.write-review {
+	padding-top: 0;
+	padding-right: 5%;
+}
+.write-review h3 {
+	padding-top: 0;
 }
 
-@media (max-width: 980px){
-	.products-single img{
-		width:100%;
-	  }	  
+.review-bottom {
+	-webkit-flex: 2 1;
+	-ms-flex: 2 1;
+	flex: 2 1;
 }
-
-.products-single-image{
-  overflow:visible;
-  /*border:1px solid red;*/
-}
-
-.products-single-image img{
-  transition: transform 0.5s;
-}
-
-
-.products-single-thumbnail a{
-   display:inline-block;
-   width:20px;
-   height:20px;
-   margin-right:1em;
-   margin-bottom: 1em;
-}
-
-.products-single-thumbnail a:nth-child(1){
-   background-image: url(.../img/perfume2.jpg);
-   display:block;
-   border: 1px solid red;
-   width:50px;
-   height:50px;
-
-}
-
-.products-single-thumbnail a:nth-child(2){
-   background-image: url(.../img/perfume8.jpg);
-   display:block;
-   border: 1px solid red;
-   width:50px;
-   height:50px;
-}
-
-.products-single-thumbnail a:nth-child(3){
-   background-image: url(.../img/perfume10.jpg);
-   display:block;
-   border: 1px solid red;
-   width:50px;
-   height:50px; 
-}
-
 
 
 /* Footer */

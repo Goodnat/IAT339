@@ -10,20 +10,19 @@
 		<link rel="stylesheet" href="css/grid.css">
 
         <script>
-  function changePics(i){
-     if (i == 1){
-        document.getElementById("single-product-image").src="img/perfume2.jpg"
-     }else if (i == 2){
-        document.getElementById("single-product-image").src="img/perfume8.jpg"
-     }else if (i == 3){
-        document.getElementById("single-product-image").src="img/perfume10.jpg"
-     }else if (i == 0){
-        document.getElementById("single-product-image").src="img/perfume2.jpg"
-     }
-     
-  }
-
-</script>
+          function changePics(i) {
+             if (i == 1) {
+                document.getElementById("single-product-image").src="img/perfume2.jpg"
+             } else if (i == 2){
+                document.getElementById("single-product-image").src="img/perfume8.jpg"
+             } else if (i == 3){
+                document.getElementById("single-product-image").src="img/perfume10.jpg"
+             } else if (i == 0){
+                document.getElementById("single-product-image").src="img/perfume2.jpg"
+             }
+             
+          }
+        </script>
 	</head>
 
 	<body>
@@ -45,28 +44,27 @@
 	    
         <!-- Page Content -->
 
-        <!-- Product thumbnail images-->
-        
         <div class="container product">
-            <div class="products-single-thumbnail">
-                <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
-                <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
-                <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
-            </div>
 
-            <!-- Product images -->
+            <!-- Product thumbnail images-->
+            <div class="container-item product-thumbnails">
+                <a href="javascript:void(0)" onmouseover="changePics(1)">
+                    <img src="img/perfume2.jpg" alt="First product image">
+                </a>
+                <a href="javascript:void(0)" onmouseover="changePics(2)">
+                    <img src="img/perfume8.jpg" alt="Second product image">
+                </a>
+                <a href="javascript:void(0)" onmouseover="changePics(3)">
+                    <img src="img/perfume10.jpg" alt="Third product image">
+                </a>
+            </div>
+            
+            <!-- Single image -->
 			<div class="container-item product-left">
-                <div class="products-single">
-                    <div class="products-single-image">
-                        <a href="single-product.html">
-                        <img src="img/perfume2.jpg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
-                        </a>
-                    </div>
-                </div>	
-                                 
+                <img src="img/perfume2.jpg" alt="First product image" id="single-product-image" onmouseover="changePics(0)" >
 			</div>
 
-	       <!-- Product images, size options and prices -->
+	       <!-- Size options and prices -->
             <div class="container-item product-right">
 				<h2>FR/2018</h2>
 				<p>Inspired by the resurgence of classic gin cocktails by Carlos Viñals</p>
@@ -84,22 +82,15 @@
                     </div>
                 </div>
 
-                <div class="select-size">
-                <p>TOP:Melon Pop Rocks / Grapefruit Zest / Gin &amp; Tonic</p>
-                <p>HEART:Juniper / Madagascar Ginger / Aromatic Lavender</p>
-                <p>BASE:Chilled Amberwood / Metallic Musk</p>
-                </div>
+                <section class="perfume-details">
+                    <p>TOP: Melon Pop Rocks / Grapefruit Zest / Gin &amp; Tonic</p>
+                    <p>HEART: Juniper / Madagascar Ginger / Aromatic Lavender</p>
+                    <p>BASE: Chilled Amberwood / Metallic Musk</p>
+                </section>
 
                 <!-- Buttons -->
-                <a href="#" class="button-1 add-to-bag" role="button">
-                    <img src="img/shopping-bag.png" alt="Add to bag">
-                    <span>Add to bag</span>
-                </a>
-                <a href="#" class="button-2 add-to-wishlist" role="button">
-                    <img src="img/love.png" alt="Add to wishlist" class="normal-img">
-                    <img src="img/love-hover.png" alt="Add to wishlist" class="hover-img">
-                     Add to wishlist
-                </a>
+                <a href="#" class="button-1" role="button">Add to bag</a>
+                <a href="#" class="button-2" role="button">Add to wishlist</a>
 
 			</div> <!-- End of .product-right -->
 
@@ -129,8 +120,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="container-item">
                     <h3>Customer reviews</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus ullamcorper orci, non ornare magna rutrum sit amet.</p>
@@ -140,7 +129,21 @@
 
             <div class="container">
 
-		        <div class="review-bottom">
+                <div class="container-item write-review">
+                    <h3>Write a review</h3>
+                    <form method="post" action="#" id="customer-review">
+                        <label for="order-number">Your order number</label>
+                        <input type="text" id="order-number" placeholder="X0000000-0000">
+                        
+                        <label for="review">Your Review</label>
+                        <!-- <input type="text" id="review" placeholder="Please tell us what you like or dislike about this product."> -->
+                        <textarea rows="5" cols="50" id="review" form="customer-review">Please tell us what you like or dislike about this product.</textarea>
+
+                        <button>Submit</button>  
+                    </form>
+                </div>
+
+		        <div class="container-item review-bottom">
                     <div class="review-overall-2">
                         <div class="review-overall-2-left">
                             <p>User name</p>
@@ -253,16 +256,8 @@
                     </div>
 
                 </div> <!-- End of .review-bottom -->
-            </div> <!-- End of .product-review -->
 
-                <div class="container-item">
-                <form method="post" action="#">
-                    <label for="name">Write a review</label>
-                    <input type="reviews" id="name" placeholder="Tell us what you like or dislike about this product">
-                    <button>Submit</button>
-                    
-                </form>
-                </div>
+            </div> <!-- End of .product-review -->
 
         </div>
  
