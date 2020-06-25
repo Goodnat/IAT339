@@ -306,12 +306,6 @@ img.security-code {
 
 .contact-form {
   margin-top: 2rem;
-  position: relative;
-}
-
-.contact-form button {
-  position: absolute;
-  right: 0;
 }
 
 .contact1, .location, .contact3 {
@@ -325,12 +319,6 @@ img.security-code {
 
 .location .three-fourths img {
   max-height: 37.5rem; /* 600px */
-}
-
-@media (max-width: 480px) {
-    .contact {
-    margin-bottom: 2.5rem;
-  }
 }
 
 .location .button-1,
@@ -480,13 +468,14 @@ section.citation {
 	}
 
 	.nav-icon {
-		display: block;
-		padding-top: 1rem;
+		display: inline-block;
+		padding-top: 1.25rem;
+    padding-right: 1rem;
 		width: 3.5rem;
 	}
 
 	.h1-mobile {
-		display: block;
+		display: inline-block;
 		max-width: 80%;
 	}
 }

@@ -74,7 +74,7 @@ div.order-summary div.container {
 }
 
 .index2 .container-item{
-	padding:5rem;
+	padding: 5rem;
 }
 
 .index3 {
@@ -83,7 +83,8 @@ div.order-summary div.container {
 }
 
 .index5 .container-item {
-	padding: 3%;
+	padding: 0 5%;
+	padding-bottom: 5%;
 }
 
 .index1, .index2, .index3,
@@ -103,7 +104,7 @@ div.order-summary div.container {
 
 .index1 .text, 
 .index4 .text {
-	padding: 0 2%;
+	padding: 8% 2%;
 }
 
 .index1, .index2, 
@@ -150,6 +151,8 @@ div.order-summary div.container {
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
+
+	text-align: center;
 }
 
 
@@ -190,13 +193,8 @@ div.order-summary div.container {
    margin-right: 1rem;
 }
 
-.product-left,
-.prodcut-right {
-    padding: 0;
-}
-
 .product-left img {
-	width: 100%;
+	width: 85%;
 }
 
 .product-right {
@@ -284,7 +282,9 @@ div.order-summary div.container {
 }
 
 .social-media img {
-	width: 2em;
+	width: 5vw;
+	min-width: 1.25em;
+	max-width: 3em;
 	display: inline-block;
 	margin: 0 5%;
 }
@@ -296,6 +296,71 @@ div.order-summary div.container {
 
 .resources p {
 	padding: 1rem;
+}
+
+/*************************** For Mobile Screen ***************************/
+
+@media (max-width: 480px) {
+
+	.index1, .index2, .index4, .index5,
+	.about1, .about2,
+	.product, .review-intro, .review-detail,
+	.contact1, .location, .contact3,
+	.checkout {
+		-webkit-flex-flow: column nowrap;
+		-ms-flex-flow: column nowrap;
+		flex-flow: column nowrap;
+	}
+
+	.index2 .container-item {
+		padding: 10%;
+	}
+
+	/* Product Detail Page */
+
+	.product-thumbnails {
+		display: -webkit-flex; 
+		display: -ms-flex;
+		display: flex;
+
+		-webkit-justify-content: space-evenly;
+		-ms-justify-content: space-evenly;
+		justify-content: space-evenly;
+
+		padding: 1rem;
+		padding-bottom: 0;
+	}
+
+	.product-thumbnails a {
+		flex: 1 1 25%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.product-left img {
+		width: 100%;
+	}
+
+	.review-bottom {
+		overflow: visible;
+	}
+
+	/* Contact Page */
+
+	.three-fourths {
+		-webkit-flex: 0 1 100%;
+		-ms-flex: 0 1 100%;
+		flex: 0 1 100%;
+
+		width: 100%;
+		height: auto;
+	}
+
+	.contact3 .text {
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 2rem;
+	}
 }
 
 
