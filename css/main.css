@@ -460,18 +460,48 @@ section.citation {
   text-decoration: none;
 }
 
+/*************************** burger icon ***************************/
+
+
+
 /*************************** For Mobile Screen ***************************/
 
-@media (max-width: 480px) {
-	.top-nav {
-		display: none;
-	}
+@media (max-width: 680px) {
+
+  .burger div{
+    width:25px;
+    height:5px;
+    background-color:black;
+    margin:5px;
+  }
+  .burger{
+    position: relative;
+    height:50px;
+    z-index: 2;
+  }
+  .top-nav .nav-links{
+    position: fixed;
+    right:0px;
+    top:-20px;
+    background: #e4e4e4;
+    height:110vh;
+    width:100%;
+    flex-direction: column;
+    clip-path: circle(0px at 10% -5%);
+    -webkit-clip-path: circle(0px at 10% -5%);
+    transition:all 1s ease-out;
+    z-index: 1;
+  }
+  .nav-links.open{
+    clip-path: circle(1200px at 10% -5%);
+    -webkit-clip-path: circle(1200px at 10% -5%);
+  }
 
 	.nav-icon {
 		display: inline-block;
 		padding-top: 1.25rem;
     padding-right: 1rem;
-		width: 3.5rem;
+    width: 3.5rem;
 	}
 
 	.h1-mobile {
