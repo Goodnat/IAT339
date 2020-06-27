@@ -7,6 +7,7 @@
 		<title>Style Guide</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/guide.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/main.css">    
 	</head>
@@ -19,7 +20,7 @@
 		<div>
 			<h1>Style guide</h1>
 
-			<p class="padding-32 content-block">Our git repository: <a href="https://github.com/Goodnat/lab02" target="_blank" class="in-text_link">https://github.com/Goodnat/lab02</a></p>
+			<p class="padding-32 content-block">Our git repository: <a href="https://github.com/Goodnat/IAT339" target="_blank" class="in-text_link">https://github.com/Goodnat/IAT339</a></p>
 
 			<!-- Site map -->
 			<!-- <div id="site-map" class="content-block">
@@ -45,15 +46,15 @@
 
 				<!-- call-to-action button -->
 				<section class="container">
-					<h4 class="container-item">A call-to-action button:</h4>
+					<h4 class="container-item">Call-to-action buttons:</h4>
 					<div class="container-item example">
-						<a href="#" class="button-1" role="button"><span>Buy it now</span></a>
-						<a href="#" class="button-2" role="button">Add to bag</a>
+						<a href="#" class="button-1" role="button">Add to bag</a>
+                		<a href="#" class="button-2" role="button">Add to wishlist</a>
 					</div>
 					<code class="container-item html code-box">
 						HTML:<br>
-						&lt;a href="#" class="button-1" role="button"&gt;&lt;span&gt;Button one&lt;/span&gt;&lt;/a&gt;<br>
-						&lt;a href="#" class="button-2" role="button"&gt;Button two&lt;/a&gt;
+						&lt;a href="#" class="button-1" role="button"&gt;&lt;Add to bag&lt;/a&gt;<br>
+						&lt;a href="#" class="button-2" role="button"&gt;Add to wishlist&lt;/a&gt;
 					</code>
 				</section>
 
@@ -191,79 +192,46 @@
 				<section>
 					<h4>Module: Top navigation</h4>
 
-					<header class="container">
+					<header>
 						<nav class="top-nav">
-							<ul>
-								<li><a href="#">ABOUT</a></li>
-								<li><a href="#">SHOP</a></li>
-								<li><h1><a href="#">Perfume</a></h1></li>
-								<li><a href="#">CONTACT</a></li>
-								<li><a href="#">CART(0)</a></li>
+							<ul class="nav-links">
+								<li><a href="about.html">ABOUT</a></li>
+								<li><a href="products.html">SHOP</a></li>
+								<li><h1><a href="index.html">P.F</a></h1></li>
+								<li><a href="contact.html">CONTACT</a></li>
+								<li><a href="checkout.html">CART(0)</a></li>
 							</ul>
 						</nav>
-						<h1 class="h1-mobile"><a href="#">Perfume</a></h1>
-						<a href="#"><img src="img/hamburger-icon.png" class="nav-icon" alt="click to see navigation bar"></a>
+						<div class="burger">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
 					</header>
 
 					<div class="container">
 
 						<code class="container-item html">
 							HTML:<br>
-							&lt;header class="container"&gt;<br>
+							&lt;header&gt;<br>
+							<br>
 							&nbsp;&lt;nav class="top-nav"&gt;<br>
 							&nbsp;&nbsp;&lt;ul&gt;<br>
 							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
 							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;Perfume&lt;/h1&gt;&lt;/a&gt;&lt;/li&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;P.F&lt;/h1&gt;&lt;/a&gt;&lt;/li&gt;<br>
 							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
 							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Cart(0)&lt;/a&gt;&lt;/li&gt;<br>
 							&nbsp;&nbsp;&lt;/ul&gt;<br>
 							&nbsp;&lt;/nav&gt;<br>
-							&nbsp;&lt;a href="#" class="container-item"&gt;&lt;img src="img/hamburger-icon.png" class="nav-icon" alt="click to see navigation bar"&gt;&lt;/a&gt;<br>
+							<br>
+							&nbsp;&lt;div class="burger"&gt;<br>
+							&nbsp;&nbsp;&lt;div class="line1"&gt;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class="line2"&gt;&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;div class="line3"&gt;&lt;/div&gt;<br>
+							&nbsp;&lt;/div&gt;<br>
+							<br>
 							&lt;/header&gt;<br>
-						</code>
-
-						<code class="container-item css">
-							Grid CSS:<br>
-							@media (max-width: 480px) &#123;<br>
-							&nbsp;header a.container-item &#123;<br>
-							&nbsp;&nbsp;padding-right: 0.5rem;<br>
-							&nbsp;&nbsp;-webkit-flex-basis: 0;<br>
-							&nbsp;&nbsp;-ms-flex-basis: 0;<br>
-							&nbsp;&nbsp;flex-basis: 0;<br>
-							&nbsp;&#125;<br>
-							&#125;<br>
-							<br>
-							Style CSS:<br>
-							nav ul &#123;<br>
-							&nbsp;list-style-type: none;<br>
-							&nbsp;text-transform: uppercase;<br>
-							&#125;<br>
-							<br>
-							nav.top-nav a:active,<br>
-							nav.top-nav a:hover,<br>
-							nav.top-nav a:focus &#123;<br>
-							&nbsp;font-weight: bold;<br>
-							&nbsp;font-style: italic;<br>
-							&nbsp;border-bottom: 2px solid #081428;<br>
-							&#125;<br>
-							<br>
-							.nav-icon &#123;<br>
-							&nbsp;display: none;<br>
-							&#125;<br>
-							<br>
-							@media (max-width: 480px) &#123;<br>
-							&nbsp;h1.title &#123;<br>
-							&nbsp;&nbsp;padding-left: 0.5rem;<br>
-							&nbsp;&#125;<br>
-							&nbsp;.top-nav &#123;<br>
-							&nbsp;&nbsp;display: none;<br>
-							&nbsp;&#125;<br>
-							&nbsp;.nav-icon &#123;<br>
-							&nbsp;&nbsp;display: block;<br>
-							&nbsp;&nbsp;width: 3.5rem;<br>
-							&nbsp;&#125;<br>
-							&#125;
 						</code>
 
 					</div> <!-- end of code container -->
@@ -272,162 +240,62 @@
 				<section>
 					<h4>Module: Product detailed listing</h4>
 
-					<div class="container example">
+					<div class="container product">
 
-						<div class="container-item">
-							<img src="img/placeholder.jpg" class="product-img" alt="product image">
+			            <!-- Product thumbnail images-->
+			            <div class="container-item product-thumbnails">
+			                <a href="javascript:void(0)" onmouseover="changePics(1)">
+			                    <img src="img/placeholder.jpg" alt="First product image">
+			                </a>
+			                <a href="javascript:void(0)" onmouseover="changePics(2)">
+			                    <img src="img/placeholder.jpg" alt="Second product image">
+			                </a>
+			                <a href="javascript:void(0)" onmouseover="changePics(3)">
+			                    <img src="img/placeholder.jpg" alt="Third product image">
+			                </a>
+			            </div>
+			            
+			            <!-- Single image -->
+						<div class="container-item product-left">
+			                <img src="img/placeholder.jpg" alt="First product image" id="single-product-image" onmouseover="changePics(0)" >
 						</div>
 
-						<div class="container-item-2">
-							<h3>Product name <span><img src="img/love.png" class="icon" alt="add to wishlist"></span></h3>
-							<p><a href="#" class="link_with_underline">Customer Reviews</a></p>
-							<p class="padding-16">Color: </p>
-							<div class="container left-align-items">
-								<p class="container-item tile">01</p>
-								<p class="container-item tile">02</p>
-								<p class="container-item tile">03</p>
-							</div>
-							<p class="padding-16">Size: </p>
-							<div class="container left-align-items">
-								<p class="container-item tile">XS</p>
-								<p class="container-item tile">S</p>
-								<p class="container-item tile">M</p>
-								<p class="container-item tile">L</p>
-								<p class="container-item tile">XL</p>
-							</div>
-							<h3 class="right-align padding-96">$ 00.00</h3>
-							<p class="right-align">Latest sale events.</p>
+				       <!-- Size options and prices -->
+			            <div class="container-item product-right">
+							<h2>FR/2018</h2>
+							<p>Inspired by the resurgence of classic gin cocktails by Carlos Viñals</p>
 
-							<div class="container">
-								<a href="#" class="container-item button-2" role="button">Add to bag</a>
-								<a href="#" class="container-item button-1" role="button"><span>Buy it now</span></a>
-							</div>
+			                <!-- Select a size -->
+			                <div class="select-size">
+			                    <p><em>Select a size</em></p>
+			                    <div class="container size-and-price">
+			                        <p class="container-item">50ML</p>
+			                        <p class="container-item right-align">$95.00</p>
+			                    </div>
+			                    <div class="container size-and-price">
+			                        <p class="container-item">7.5ML</p>
+			                        <p class="container-item right-align">$25.00</p>
+			                    </div>
+			                </div>
 
-						</div> <!-- end of .container-item-2  -->
-					</div> <!-- end of .example -->
+			                <section class="perfume-details">
+			                    <p>TOP: Melon Pop Rocks / Grapefruit Zest / Gin &amp; Tonic</p>
+			                    <p>HEART: Juniper / Madagascar Ginger / Aromatic Lavender</p>
+			                    <p>BASE: Chilled Amberwood / Metallic Musk</p>
+			                </section>
+
+			                <!-- Buttons -->
+			                <a href="#" class="button-1" role="button">Add to bag</a>
+			                <a href="#" class="button-2" role="button">Add to wishlist</a>
+
+						</div> <!-- End of .product-right -->
+					</div> <!-- End of .product -->
 
 					<div class="container">
-					<code class="container-item html">
-						HTML:<br>
-						&lt;div class="container"&gt;<br>
-						<br>
-						&nbsp;&lt;div class="container-item"&gt;<br>
-						&nbsp;&nbsp;&lt;img src="img/placeholder.png" class="product-img" alt="product image"&gt;<br>
-						&nbsp;&lt;/div&gt;<br>
-						<br>
-						&nbsp;&lt;div class="container-item-2"&gt;<br>
-							<br>
-							&nbsp;&nbsp;&lt;h3&gt;Product name &lt;span&gt;&lt;img src="img/love.png" class="icon" alt="add to wishlist"&gt;&lt;/span&gt;&lt;/h3&gt;<br>
-							&nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link_with_underline"&gt;Customer Reviews&lt;/a&gt;&lt;/p&gt;<br>
-							<br>
-							&nbsp;&nbsp;&lt;p class="padding-16"&gt;Color: &lt;/p&gt;<br>
-							&nbsp;&nbsp;&lt;div class="container left-align-items"&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;01&lt;/p&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;02&lt;/p&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;03&lt;/p&gt;<br>
-							&nbsp;&nbsp;&lt;/div&gt;<br>
-							<br>
-							&nbsp;&nbsp;&lt;p class="padding-16"&gt;Size: &lt;/p&gt;<br>
-							&nbsp;&nbsp;&lt;div class="container left-align-items"&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;XS&lt;/p&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;S&lt;/p&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;M&lt;/p&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;L&lt;/p&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;p class="container-item tile"&gt;XL&lt;/p&gt;<br>
-							&nbsp;&nbsp;&lt;/div&gt;<br>
-							<br>
-							&nbsp;&nbsp;&lt;h3 class="right-align padding-96"&gt;$ 00.00&lt;/h3&gt;<br>
-							&nbsp;&nbsp;&lt;p class="right-align"&gt;Latest sale events.&lt;/p&gt;<br>
-							<br>
-							&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;a href="#" class="container-item button-2" role="button"&gt;Add to bag +&lt;/a&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;a href="#" class="container-item button-1" role="button"&gt;Buy it now &#8594;&lt;/a&gt;<br>
-							&nbsp;&nbsp;&lt;/div&gt;<br>
-							<br>
-						&nbsp;&lt;/div&gt;<br>
-						<br>
-						&lt;/div&gt;<br>
-					</code>
-
-					<code class="container-item css">
-						Grid CSS:<br>
-						.container &#123;<br>
-						&nbsp;display&#58; -webkit-flex&#59;<br>
-						&nbsp;display&#58; -ms-flex&#59;<br>
-						&nbsp;display&#58; flex&#59;<br>
-						<br>
-						&nbsp;-webkit-flex-wrap&#58; wrap&#59;<br>
-						&nbsp;-ms-flex-wrap&#58; wrap&#59;<br>
-						&nbsp;flex-wrap&#58; wrap&#59;<br>
-						<br>
-						&nbsp;-webkit-justify-content&#58; space-around&#59;<br>
-						&nbsp;-ms-justify-content&#58; space-around&#59;<br>
-						&nbsp;justify-content&#58; space-around&#59;<br>
-						<br>
-						&nbsp;margin&#58; 0&#59;<br>
-						&#125;<br>
-						<br>
-						.left-align-items &#123;<br>
-						&nbsp;-webkit-justify-content: flex-start;<br>
-						&nbsp;-ms-justify-content: flex-start;<br>
-						&nbsp;justify-content: flex-start;<br>
-						&#125;<br>
-						<br>
-						.container-item &#123;<br>
-						&nbsp;-webkit-flex&#58; 1 1 auto&#59;<br>
-						&nbsp;-ms-flex&#58; 1 1 auto&#59;<br>
-						&nbsp;flex&#58; 1 1 auto&#59;<br>
-						&nbsp;padding&#58; 1rem&#59;<br>
-						&#125;<br>
-						<br>
-						.container-item-2 &#123;<br>
-						&nbsp;-webkit-flex&#58; 2 1 auto&#59;<br>
-						&nbsp;-ms-flex&#58; 2 1 auto&#59;<br>
-						&nbsp;flex&#58; 2 1 auto&#59;<br>
-						&nbsp;padding&#58; 1rem&#59;<br>
-						&#125;<br>
-						<br>
-						p.tile &#123;<br>
-						&nbsp;-webkit-flex&#58; 0 0 3.5em&#59;<br>
-						&nbsp;-ms-flex&#58; 0 0 3.5em&#59;<br>
-						&nbsp;flex&#58; 0 0 3.5em&#59;<br>
-						&nbsp;margin-top&#58; 0.5rem&#59;<br>
-						&nbsp;padding&#58; 1rem&#59;<br>
-						&#125;<br>
-						<br>
-						Style CSS:<br>
-						img.product-img &#123;<br>
-						&nbsp;width&#58; 100%&#59;<br>
-						&#125;<br>
-						<br>
-						img.icon &#123;<br>
-						&nbsp;width&#58; 1.5rem&#59;<br>
-						&#125;<br>
-						<br>
-						a.link_with_underline &#123;<br>
-						&nbsp;font-size&#58; 1rem&#59;<br>
-						&nbsp;text-decoration&#58; underline&#59;<br>
-						&#125;<br>
-						<br>
-						.tile &#123;<br>
-						&nbsp;display&#58; inline-block&#59;<br>
-						&nbsp;border&#58; 1px solid #081428&#59;<br>
-						&nbsp;margin-right&#58; 1.25rem&#59;<br>
-						&nbsp;text-align&#58; center&#59;<br>
-						&#125;<br>
-						<br>
-						.right-align &#123;<br>
-						&nbsp;text-align&#58; right&#59;<br>
-						&#125;<br>
-						<br>
-						.padding-16 &#123;<br>
-						&nbsp;padding-top&#58; 1rem&#59;<br>
-						&#125;<br>
-						<br>
-						.padding-96 &#123;<br>
-						&nbsp;padding-top&#58; 6rem&#59;<br>
-						&#125;
-					</code>
+						<code class="container-item html">
+							HTML:<br>
+							
+						</code>
 					</div>
 
 				</section> <!-- end of product detailed listing -->
@@ -435,224 +303,279 @@
 				<section>
 					<h4>Website grid structure: </h4>
 					
-					<div class="grid-structure">
-						<p>Landing Page Template</p>
-						<div class="container-item-full block-180">Header</div>
-						<div class="container">
-							<div class="container-item block-500">Image</div>
-							<div class="container-item block-500">Text</div>
-						</div>
-						<div class="container">
-							<div class="container-item block-300">Image-01</div>
-							<div class="container-item block-300">Image-02</div>
-							<div class="container-item block-300">Image-03</div>
-						</div>
-						<div class="container-item-full block-180">Subscription Form</div>
-						<div class="container">
-							<div class="container-item block-500">Text</div>
-							<div class="container-item block-500">Image</div>
-						</div>
-						<div class="container">
-							<div class="container-item block-300">Intro-01</div>
-							<div class="container-item block-300">Intro-02</div>
-							<div class="container-item block-300">Intro-03</div>
-						</div>
-						<div class="container-item-full block-180">Footer</div>
+					<div class="container">
+
+						<div class="container-item grid-structure">
+
+							<p>Landing Page Template</p>
+							<div class="container-item-full block-80">Header</div>
+							<div class="container">
+								<div class="container-item block-250">Image</div>
+								<div class="container-item block-250">Text</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-200">Image-01</div>
+								<div class="container-item block-200">Image-02</div>
+								<div class="container-item block-200">Image-03</div>
+							</div>
+							<div class="container-item-full block-180">Subscription Form</div>
+							<div class="container">
+								<div class="container-item block-250">Text</div>
+								<div class="container-item block-250">Image</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-200">Intro-01</div>
+								<div class="container-item block-200">Intro-02</div>
+								<div class="container-item block-200">Intro-03</div>
+							</div>
+							<div class="container-item-full block-180">Footer</div>
 						
-						<code class="html">
-							HTML:<br>
-							&lt;div class="container-item-full block-180"&gt;Header&lt;/div&gt;<br>
-							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;Image&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;Text&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-300"&gt;Image-01&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-300"&gt;Image-02&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-300"&gt;Image-03&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-							&lt;div class="container-item-full block-180"&gt;Subscription Form&lt;/div&gt;<br>
-							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;Text&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;Image&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-300"&gt;Intro-01&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-300"&gt;Intro-02&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-300"&gt;Intro-03&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-							&lt;div class="container-item-full block-180"&gt;Footer&lt;/div&gt;<br>
-						</code>
-					</div>
-
-					<div class="grid-structure">
-						<p>Product Browsing Page Template</p>
-						<div class="block-180">Header</div>
-						<div class="block-80">Featured events</div>
-						<div class="container">
-							<div class="container-item block-500">Side navigation</div>
-							<div class="container-item-9 block-500">Main content</div>
 						</div>
-						<div class="block-180">Footer</div>
-
-						<code class="html">
+						
+						<code class="html container-item">
 							HTML:<br>
-							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
-							&lt;div class="block-80"&gt;Featured events&lt;/div&gt;<br>
+							&lt;div class="container-item-full"&gt;Header&lt;/div&gt;<br>
+							<br>
 							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;Side navigation&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item-9 block-500"&gt;Main content&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Text&lt;/div&gt;<br>
 							&lt;/div&gt;<br>
-							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Subscription Form&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Text&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Intro-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Intro-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Intro-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Footer&lt;/div&gt;<br>
 						</code>
 					</div>
 
-					<div class="grid-structure" >
-						<p>Product Detail Page Template</p>
-						<div class="block-180">Header</div>
-						<div class="block-40">Breadcrumbs</div>
-						<div class="container">
-							<div class="container-item block-400">Product image</div>
-							<div class="container-item-2 block-400">Product details</div>
+					<div class="container">
+
+						<div class="container-item grid-structure">
+
+							<p>Product Browsing Page Template</p>
+							<div class="container-item-full block-80">Header</div>
+							<div class="container-item-full block-80">Featured events</div>
+							<div class="container">
+								<div class="container-item block-200">Image-01</div>
+								<div class="container-item block-200">Image-02</div>
+								<div class="container-item block-200">Image-03</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-200">Image-01</div>
+								<div class="container-item block-200">Image-02</div>
+								<div class="container-item block-200">Image-03</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-200">Image-01</div>
+								<div class="container-item block-200">Image-02</div>
+								<div class="container-item block-200">Image-03</div>
+							</div>
+							<div class="container-item-full block-180">Footer</div>
+						
 						</div>
-						<div class="block-180">Related policies</div>
-						<div class="block-300">Recommendations</div>
-						<div class="block-180">Footer</div>
 
-						<code class="html">
+						<code class="html container-item">
 							HTML:<br>
-							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
-							&lt;div class="block-40"&gt;Breadcrumbs&lt;/div&gt;<br>
+							&lt;div class="container-item-full"&gt;Header&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Featured events&lt;/div&gt;<br>
+							<br>
 							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-400"&gt;Product image&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item-2 block-400"&gt;Product details&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-03&lt;/div&gt;<br>
 							&lt;/div&gt;<br>
-							&lt;div class="block-180"&gt;Related policies&lt;/div&gt;<br>
-							&lt;div class="block-300"&gt;Recommendations&lt;/div&gt;<br>
-							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Footer&lt;/div&gt;
 						</code>
 					</div>
 
-					<div class="grid-structure">
-						<p>Checkout Page Template</p>
-						<div class="block-180">Header</div>
-						<div class="container">
-							<div class="container-item block-400">Product listing</div>
-							<div class="container-item block-400">Order summary</div>
+					<div class="container" >
+
+						<div class="container-item grid-structure">
+							<p>Product Detail Page Template</p>
+							<div class="container-item-full block-80">Header</div>
+							<div class="container">
+								<div class="container-item block-250">Product Images</div>
+								<div class="container-item block-250">Product Details</div>
+							</div>
+							<div class="container-item-full block-180">General Customer Reviews</div>
+							<div class="container">
+								<div class="container-item block-250">Write a review</div>
+								<div class="container-item block-250">Other Customers' Reviews</div>
+							</div>
+							<div class="container-item-full block-180">Footer</div>
 						</div>
-						<div class="block-180">Footer</div>
 
-						<code class="html">
+						<code class="html container-item">
 							HTML:<br>
-							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="container-item-full"&gt;Header&lt;/div&gt;<br>
+							<br>
 							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-400"&gt;Product listing&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-400"&gt;Order summary&lt;/div&gt;
+							&nbsp;&lt;div class="container-item"&gt;Product Images&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Product Details&lt;/div&gt;<br>
 							&lt;/div&gt;<br>
-							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Write a review&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Other Customers' Reviews&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Footer&lt;/div&gt;
 						</code>
 					</div>
 
-					<div class="grid-structure">
-						<p>One-to-three-column Template</p>
-						<div class="block-180">Header</div>
-						<div class="container">
-							<div class="container-item block-400">Side content</div>
-							<div class="container-item-3 block-400">Main content</div>
-						</div>
-						<div class="block-180">Footer</div>
+					<div class="container">
 
-						<code class="html">
-							HTML:<br>
-							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
-							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-400"&gt;Side content&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item-3 block-400"&gt;Main content&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
-						</code>
-					</div>
+						<div class="container-item grid-structure">
+							<p>Checkout Page Template</p>
+							<div class="container-item-full block-80">Header</div>
 
-					<div class="grid-structure">
-						<p>Three-column Template</p>
-						<div class="block-180">Header</div>
-						<div class="container">
-							<div class="container-item block-500">1st Column</div>
-							<div class="container-item block-500">2nd Column</div>
-							<div class="container-item block-500">3rd Column</div>
-						</div>
-						<div class="block-180">Footer</div>
+							<div class="container">
+								<div class="container-item block-300">Billing Address</div>
 
-						<code class="html">
-							HTML:<br>
-							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
-							&lt;div class="container"&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;1st Column&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;2nd Column&lt;/div&gt;<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;3rd Column&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-							&lt;div class="block-180"&gt;Footer&lt;/div&gt;
-						</code>
-					</div>
-
-					<div class="grid-structure">
-						<p>Contact-us Template</p>
-						<div class="block-180">Header</div>
-
-						<div class="container center-align-items">
-							<div class="container-item block-500"></div>
-
-							<div class="container-item-4 block-500">
-								<div class="container">
-									<div class="container-item block-300">Company image</div>
-									<div class="container-item block-300">'Email Us' form</div>
+								<div class="container-item block-400">	
+									<div class="container-item-full block-180">Order summary</div>
+									<div  class="container-item-full block-250">Payment</div>
 								</div>
-								<div class="block-40">Horizontal divider</div>
-								<div class="container">
-									<div class="container-item block-300">Map</div>
-									<div class="container-item block-300">'Working hours' table</div>
-								</div>
+
 							</div>
 
-							<div class="container-item block-500"></div>
+							<div class="container-item-full block-180">Footer</div>
 						</div>
 
-						<div class="block-40">Horizontal divider</div>
-
-						<div class="container">
-							<div class="container-item block-300">Information</div>
-							<div class="container-item block-300">Information</div>
-						</div>
-
-						<div class="block-180">Footer</div>
-
-						<code class="html">
+						<code class="html container-item">
 							HTML:<br>
-							&lt;div class="block-180"&gt;Header&lt;/div&gt;<br>
+							&lt;div class="container-item-full"&gt;Header&lt;/div&gt;<br>
 							<br>
 							&lt;div class="container"&gt;<br>
 							<br>
-							&nbsp;&lt;div class="container-item block-500"&gt;&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Billing Address&lt;/div&gt;<br>
 							<br>
-							&nbsp;&lt;div class="container-item-4 block-500"&gt;<br>
-								&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-								&nbsp;&nbsp;&nbsp;&lt;div class="container-item block-300"&gt;Company image&lt;/div&gt;<br>
-								&nbsp;&nbsp;&nbsp;&lt;div class="container-item-2 block-300"&gt;'Email Us' form&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;/div&gt;<br>
-								<br>
-								&nbsp;&nbsp;&lt;div class="block-40"&gt;Horizontal divider&lt;/div&gt;<br>
-								<br>
-								&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-								&nbsp;&nbsp;&nbsp;&lt;div class="container-item block-300"&gt;Phone number&lt;/div&gt;<br>
-								&nbsp;&nbsp;&nbsp;&lt;div class="container-item-2 block-300"&gt;'Working hours' table&lt;/div&gt;<br>
-								&nbsp;&nbsp;&lt;/div&gt;<br>
-								&nbsp;&lt;/div&gt;<br>
-								<br>
-								&nbsp;&lt;div class="container-item block-500"&gt;&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;<br>
+							&nbsp;&nbsp;&lt;class="container-item-full"&gt;Order Summary&lt;/div&gt;<br>
+							&nbsp;&nbsp;&lt;class="container-item-full"&gt;Payment&lt;/div&gt;<br>
+							&nbsp;&lt;/div&gt;<br>
 							<br>
 							&lt;/div&gt;<br>
 							<br>
-							&lt;div class="block-180"&gt;Footer&lt;/div&gt;<br>
+							&lt;div class="container-item-full"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="container">
+
+						<div class="container-item grid-structure">
+							<p>Contact Page Template</p>
+							<div class="container-item-full block-80">Header</div>
+							<div class="container">
+								<div class="container-item block-250">Form</div>
+								<div class="container-item block-250">Image</div>
+							</div>
+							<div class="container">
+								<div class="three-fourths block-250">Location map</div>
+								<div class="container-item block-250">Details</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-200">Intro-01</div>
+								<div class="container-item block-200">Intro-02</div>
+								<div class="container-item block-200">Intro-03</div>
+							</div>
+							<div class="container-item-full block-180">Footer</div>
+						</div>
+
+						<code class="html container-item">
+							HTML:<br>
+							&lt;div class="container-item-full"&gt;Header&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Form&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="three-fourths"&gt;Location map&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Details&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Intro-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Intro-02&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Intro-03&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Footer&lt;/div&gt;
+						</code>
+					</div>
+
+					<div class="container">
+
+						<div class="container-item grid-structure">
+							<p>About Page Template</p>
+							<div class="container-item-full block-80">Header</div>
+							<div class="container">
+								<div class="container-item block-250">Image</div>
+								<div class="container-item block-250">Text</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-180">Image-01</div>
+								<div class="container-item block-180">Image-02</div>
+							</div>
+							<div class="container">
+								<div class="container-item block-250">Text</div>
+								<div class="container-item block-250">Image</div>
+							</div>
+							<div class="container-item-full block-180">Footer</div>
+						</div>
+
+						<code class="html container-item">
+							HTML:<br>
+							&lt;div class="container-item-full"&gt;Header&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Text&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-01&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image-02&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container"&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Text&lt;/div&gt;<br>
+							&nbsp;&lt;div class="container-item"&gt;Image&lt;/div&gt;<br>
+							&lt;/div&gt;<br>
+							<br>
+							&lt;div class="container-item-full"&gt;Footer&lt;/div&gt;
 						</code>
 					</div>
 
@@ -809,7 +732,7 @@
 						<br>
 						&nbsp;&lt;/div&gt; &lt;!-- end of Order Summary --&gt;<br>
 						<br>
-					&lt;/div&lt; &lt;!-- end of Bag Review Module --&gt;<br>
+						&lt;/div&lt; &lt;!-- end of Bag Review Module --&gt;<br>
 					</code>
 					</div> <!-- end of code section -->
 				</section> <!-- end of bag review module -->
