@@ -13,6 +13,11 @@ section.citation, section.container {
 	padding-top: 1rem;
 }
 
+.grid-structure {
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+}
+
 .grid-structure div:nth-of-type(even) {
 	background-color: #ccc;
 	border: 1px solid white;

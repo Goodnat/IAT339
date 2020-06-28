@@ -278,6 +278,7 @@ div.order-summary div.container {
 	padding: 0.5em;
 	color: gray;
 	border: 1px solid black;
+	border-radius: 0.25em;
 }
 
 .write-review {

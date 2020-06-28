@@ -41,7 +41,7 @@ nav.top-nav ul li a:hover{
   color: #91640F;
 }
 
-nav.top-nav ul li a:after{
+nav.top-nav ul li a::after{
   display: block;
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ nav.top-nav ul li a:after{
   z-index: -1;
 }
 
-nav.top-nav ul li :hover:after{
+nav.top-nav ul li :hover::after{
   opacity: 1;
   visibility: visible;
   height: 2rem;
@@ -72,7 +72,7 @@ nav.top-nav ul li :hover:after{
 
 header.container,
 footer {
-  background-color: #EFEFEF;
+  background-color: #FFE2BC;
   padding-top: 2%;
   padding-bottom: 2%;
   /*border-bottom: 1px solid rgb(0,0,0);
@@ -193,11 +193,39 @@ label {
   padding-bottom: 0.5rem;
 }
 
-input {
+select {
+  /* Delete border color when hovering on it */
+  /*outline: none;*/
+  border: none;
+
+  /* Delete default dropdown icon */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand { /* For IE <= 11 */
+  display: none; 
+}
+
+input, select {
+  cursor: pointer;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid rgb(0,0,0);
+  border-radius: 0.25em;
   width: 100%;
+}
+
+.droplist {
+  position: relative;
+}
+
+.droplist img {
+  position: absolute;
+  top: .6em;
+  right: .75em;
+  width: 1.25rem;
+  pointer-events: none;
 }
 
 /* Submit Buttons */
@@ -209,9 +237,16 @@ button {
   padding: 0.75rem;
   width: 50%;
   border: 1px solid black;
+  border-radius: 0.25em;
   display: inline-block;
-  margin: 5% 0;
-  transition: all 0.4s ease 0s;
+  margin: 2% 0;
+  transition: all 0.4s ease;
+}
+
+@media (min-width: 980px) {
+  button {
+    margin: 5% 0;
+  }
 }
 
 button:hover {
@@ -253,25 +288,6 @@ div.order-summary-details p.total {
   padding-bottom: 0;
 }
 
-div.input-with-arrow {
-  position: relative;
-}
-
-div.input-with-arrow img {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  width: 1rem;
-
-  transition: transform 0.2s ease;
-}
-
-div.input-with-arrow img:active,
-div.input-with-arrow img:hover,
-div.input-with-arrow img:focus {
-  transform: rotate(-180deg);
-}
-
 /* Tooltip */
 
 img.security-code {
@@ -295,7 +311,7 @@ img.security-code {
 
   position: absolute;
   top: -0.5rem;
-  left: 11rem;
+  left: 9em;
   z-index: 1;
 }
 
@@ -371,6 +387,7 @@ ul.sales-slider-content {
 }
 
 .sales-slider-content:hover {
+  cursor: pointer;
   animation-play-state: paused;
 }
 

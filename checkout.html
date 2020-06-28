@@ -48,21 +48,41 @@
         			<input type="text" id="address">
 
         			<label for="city">City</label>
-        			<div class="input-with-arrow">
-	        			<input type="text" id="city" value="Burnaby">
-	        			<img src="img/arrow-down.png" alt="Click it to see more options.">
+        			<div class="droplist">
+	        			<select id="city" name="city">
+	        				<option value=""> </option>
+	        				<option value="burnaby">Burnaby</option>
+	        				<option value="coquitlam">Coquitlam</option>
+	        				<option value="delta">Delta</option>
+	        				<option value="langley">Langley</option>
+	        				<option value="richmond">Richmond</option>
+	        				<option value="vancouver">Vancouver</option>
+	        			</select>
+	        			<img src="img/arrow-down.png" alt="dropdown list button">
 	        		</div>
 
         			<label for="province">Province</label>
-        			<div class="input-with-arrow">
-        				<input type="text" id="province" value="BC">
-        				<img src="img/arrow-down.png" alt="Click it to see more options.">
+        			<div class="droplist">
+	        			<select id="province" name="province">
+	        				<option value=""> </option>
+	        				<option value="alberta">Alberta</option>
+	        				<option value="british-columnbia">British Columbia</option>
+	        				<option value="manitoba">Manitoba</option>
+	        				<option value="nova-scotia">Nova Scotia</option>
+	        				<option value="ontario">Ontario</option>
+	        				<option value="quebec">Quebec</option>
+	        			</select>
+	        			<img src="img/arrow-down.png" alt="dropdown list button">
 	        		</div>
 
         			<label for="country-region">Country/Region</label>
-        			<div class="input-with-arrow">
-        				<input type="text" id="country-region" value="Canada">
-        				<img src="img/arrow-down.png" alt="Click it to see more options.">
+        			<div class="droplist">
+	        			<select id="country-region">
+	        				<option value="us">America</option>
+	        				<option value="ca" selected>Canada</option>
+	        				<option value="en">England</option>
+	        			</select>
+	        			<img src="img/arrow-down.png" alt="dropdown list button">
 	        		</div>
 
         			<label for="postal-code">Postal code</label>
