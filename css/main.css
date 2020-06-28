@@ -3,6 +3,7 @@ body {
 	margin: 1rem;
 	color: #081428;
 	font-size: 1rem;
+  overflow-x: hidden;
 }
 
 /* Top Navigation */
@@ -119,13 +120,13 @@ h1 {
 
 h2 {
 	font-size: 2rem;
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
-	font-size: 1.5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 0.75rem;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
 }
 
 h4 {
@@ -135,8 +136,8 @@ h4 {
 
 em {
 	font-size: 1.25rem;
-    font-style: normal;
-    font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
 }
 
 a {
@@ -351,6 +352,60 @@ div.select-size {
     padding-bottom: 0.25rem;
 }
 
+/* Sales Slidershow */
+
+.sales-slider {
+  width: 200%;
+  overflow-x: hidden;
+}
+
+ul.sales-slider-content {
+  list-style: none;
+  padding: 0;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  animation: slidershow 20s infinite;
+}
+
+.sales-slider-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slidershow {
+  5% {
+    transform: translateX(0);
+  }
+  35%, 65% {
+    transform: translateX(-50%);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+
+.sales-slider-content li {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 1.25em 0;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+.sales-slider-content li:nth-child(1) {
+  background-color: #ffe2bc;
+  color: #91640f;
+  font-weight: bold;
+}
+.sales-slider-content li:nth-child(2) {
+  background-color: #91640f;
+  color: white;
+}
+
 /* detail.html_review item */
 
 .prodcut-review {
@@ -418,52 +473,7 @@ div.select-size {
   margin: 2% 0;
 }
 
-/*.product-single{
-  flex-basis:23%;
-  line-height:180%;
-}
-
-.product-single img{
-  width:70%;
-}
-
-@media (max-width: 980px){
-  .product-single img{
-    width:100%;
-    }   
-}*/
-
-/*.product-single-image{
-  overflow:visible;
-  border:1px solid red;
-}*/
-
-/*.product-single-thumbnail a:nth-child(1) {
-   background-image: url(".../img/perfume2.jpg");
-   display: block;
-   border: 1px solid red;
-   width: 50px;
-   height: 50px;
-
-}
-
-.product-single-thumbnail a:nth-child(2) {
-   background-image: url(.../img/perfume8.jpg);
-   display:block;
-   border: 1px solid red;
-   width:50px;
-   height:50px;
-}
-
-.product-single-thumbnail a:nth-child(3) {
-   background-image: url(.../img/perfume10.jpg);
-   display:block;
-   border: 1px solid red;
-   width:50px;
-   height:50px; 
-}*/
-
-/*************************** burger icon ***************************/
+/*************************** Burger Icon ***************************/
 
 
 /*************************** For Mobile Screen ***************************/
