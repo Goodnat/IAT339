@@ -301,6 +301,61 @@
 				</section> <!-- end of product detailed listing -->
 
 				<section>
+					<h4>Module: Checkout - Shipping Address Form</h4>
+
+					<div class="container-item billing-details">
+		        		
+		        		<form method="post" action="#">
+
+		        			<label for="first-name">First Name</label>
+		        			<input type="text" id="first-name">
+		        			<label for="last-name">Last Name</label>
+		        			<input type="text" id="last-name">
+
+		        			<label for="address">Street address</label>
+		        			<input type="text" id="address">
+
+		        			<label for="city">City</label>
+		        			<div class="input-with-arrow">
+			        			<input type="text" id="city" value="Burnaby">
+			        			<img src="img/arrow-down.png" alt="Click it to see more options.">
+			        		</div>
+
+		        			<label for="province">Province</label>
+		        			<div class="input-with-arrow">
+		        				<input type="text" id="province" value="BC">
+		        				<img src="img/arrow-down.png" alt="Click it to see more options.">
+			        		</div>
+
+		        			<label for="country-region">Country/Region</label>
+		        			<div class="input-with-arrow">
+		        				<input type="text" id="country-region" value="Canada">
+		        				<img src="img/arrow-down.png" alt="Click it to see more options.">
+			        		</div>
+
+		        			<label for="postal-code">Postal code</label>
+		        			<input type="text" id="postal-code">
+
+		        			<label for="phone">Phone number</label>
+		        			<input type="text" id="phone">
+
+		        			<label for="email-address">Email address</label>
+		        			<input type="email" id="email-address" placeholder="example@gmail.com">
+
+		        		</form>
+		        	</div>
+
+		        	<div class="container">
+						<code class="container-item html">
+							HTML:<br>
+							
+						</code>
+					</div>
+
+		        </section> <!-- end of shipping address -->
+
+
+				<section>
 					<h4>Website grid structure: </h4>
 					
 					<div class="container">
@@ -580,162 +635,6 @@
 					</div>
 
 				</section> <!-- end of website grid structure -->
-
-				<section>
-					<h4>Module: Shopping bag review</h4>
-
-					<div class="container space-between example">
-
-						<!-- Order details -->
-						<div class="container-item-4">
-
-							<div class="container">
-								<div class="container-item">
-									<img src="img/placeholder.jpg" class="product-img" alt="product thumbnail">
-								</div>
-								<div class="container-item-4">
-									<h3>Product name <span><img src="img/love.png" class="icon" alt="add to wishlist"></span></h3>
-									<p><a href="#" class="link_with_underline">Customer Reviews</a></p>
-									<div class="container">
-										<p class="container-item">Color: XX</p>
-										<p class="container-item">Size: M</p>
-										<p class="container-item">Amount: 1</p>
-										<p class="container-item">$ 00.00</p>
-									</div>
-									<p class="padding-96">X Remove</p>
-								</div>
-							</div>
-
-							<hr class="divider"/>
-
-							<div class="container">
-								<div class="container-item">
-									<img src="img/placeholder.jpg" class="product-img" alt="product thumbnail">
-								</div>
-								<div class="container-item-4">
-									<h3>Product name <span><img src="img/love.png" class="icon" alt="add to wishlist"></span></h3>
-									<p><a href="#" class="link_with_underline">Customer Reviews</a></p>
-									<div class="container">
-										<p class="container-item">Color: XX</p>
-										<p class="container-item">Size: M</p>
-										<p class="container-item">Amount: 1</p>
-										<p class="container-item">$ 00.00</p>
-									</div>
-									<p class="padding-96">X Remove</p>
-								</div>
-							</div>
-
-						</div> <!-- end of Order Detail -->
-
-						<!-- Order summary -->
-						<div class="container-item">
-
-							<div class="order-summary">
-								<h3>Order summary</h3>
-								<div class="container space-between">
-									<p class="container-item">Subtotal</p>
-									<p class="container-item right-align">$ 00.00</p>
-								</div>
-								<div class="container space-between">
-									<p class="container-item">Shipping estimate</p>
-									<p class="container-item right-align">$ 0.00</p>
-								</div>
-								<div class="container space-between">
-									<p class="container-item">Tax</p>
-									<p class="container-item right-align">TBD</p>
-								</div>
-								<hr />
-								<div class="container space-between">
-									<p class="container-item"><em>Total</em></p>
-									<p class="container-item right-align"><em>$ 00.00</em></p>
-								</div>
-							</div>
-
-							<a href="#" class="button-1" role="button"><span>Continue</span></a>
-							
-						</div> <!-- end of Order Summary -->
-					</div> <!-- end of Bag Review Module -->
-
-					<div class="container">
-					<code class="container-item html">
-						HTML:<br>
-						&lt;div class="container space-between example"&gt;<br>
-						<br>
-						&nbsp;&lt;!-- Order details --&gt;<br>
-						&nbsp;&lt;div class="container-item-4"&gt;<br>
-						<br>
-						&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container-item"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/placeholder.jpg" class="product-img"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container-item-4"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Product name &lt;span&gt;&lt;img src="img/love.png" class="icon"&gt;&lt;/span&gt;&lt;/h3&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link_with_underline"&gt;Customer Reviews&lt;/a&gt;&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Color: XX&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Size: M&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Amount: 1&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;$ 00.00&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="padding-96"&gt;X Remove&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&lt;/div&gt;<br>
-						<br>
-						&nbsp;&nbsp;&lt;hr class="divider"/&gt;<br>
-						<br>
-						&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container-item"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/placeholder.jpg" class="product-img"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container-item-4"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Product name &lt;span&gt;&lt;img src="img/love.png" class="icon"&gt;&lt;/span&gt;&lt;/h3&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href="#" class="link_with_underline"&gt;Customer Reviews&lt;/a&gt;&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Color: XX&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Size: M&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Amount: 1&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;$ 00.00&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="padding-96"&gt;X Remove&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&lt;/div&gt;<br>
-						<br>
-						&nbsp;&lt;/div&gt; &lt;!-- end of Order Detail --&gt;
-					</code>
-
-					<code class="container-item html">
-						&nbsp;&lt;!-- Order summary --&gt;<br>
-						&nbsp;&lt;div class="container-item"&gt;<br>
-						<br>
-						&nbsp;&nbsp;&lt;div class="order-summary"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;h3&gt;Order summary&lt;/h3&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Subtotal&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;$ 00.00&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Shipping estimate&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;$ 0.00&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;Tax&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;TBD&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;hr /&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;div class="container space-between"&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item"&gt;&lt;em&gt;Total&lt;/em&gt;&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="container-item right-align"&gt;&lt;em&gt;$ 00.00&lt;/em&gt;&lt;/p&gt;<br>
-						&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-						&nbsp;&nbsp;&lt;/div&gt;<br>
-						<br>
-						&nbsp;&nbsp;&lt;a href="#" class="button-1" role="button"&gt;&lt;span&gt;Continue&lt;/span&gt;&lt;/a&gt;<br>
-						<br>
-						&nbsp;&lt;/div&gt; &lt;!-- end of Order Summary --&gt;<br>
-						<br>
-						&lt;/div&lt; &lt;!-- end of Bag Review Module --&gt;<br>
-					</code>
-					</div> <!-- end of code section -->
-				</section> <!-- end of bag review module -->
 
 			</div> <!-- end of 'Modular pattern elements' -->
 
