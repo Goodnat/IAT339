@@ -363,8 +363,8 @@ div.select-size {
 .size-and-price:hover {
     border-bottom: 1px dotted black;
 }
-.size-and-price>a:focus {
-    background-color: yellow;
+.size-and-price a:focus {
+    background-color: #FFE2BC;
 }
 
 .size-and-price .container-item {
