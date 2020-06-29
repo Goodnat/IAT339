@@ -390,8 +390,8 @@ div.select-size {
 
 .product-image:hover .product-image-info{
   visibility: visible;
-  background-color:#ffffffaa;
-  transform: scale(1)
+  background-color:#f0f0f0cc;
+  transform: scale(1);
 }
 
 .product-image-info>span{
