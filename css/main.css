@@ -352,40 +352,50 @@ img.security-code {
 /* Product details */
 
 .perfume-details {
-  margin-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .product-image {
     position: relative;
 }
 
-.product-image-info{
-  position:absolute;
-  top:0;
-  width:100%;
-  height:100%;
-  background-color:#ffffff00;
-  visibility: hidden;
-  transition: all 0.2s;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0)
+.product-image-info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: #ffffff00;
+    visibility: hidden;
+    transition: all 0.2s;
+    transform: scale(0);
 }
 
-.product-image:hover .product-image-info{
-  visibility: visible;
-  background-color:#f0f0f0cc;
-  transform: scale(1);
+.product-image:hover .product-image-info,
+.product-image:active .product-image-info,
+.product-image:focus .product-image-info {
+    visibility: visible;
+    background-color: #f0f0f0cc;
+    transform: scale(1);
 }
 
-.product-image-info>span{
+.product-image-info > span {
   text-align: left;
   line-height: 2.5;
   font-size: 10pt;
   padding: 2em;
 
 }
+
 /* Sales Slidershow */
 
 .sales-slider {
