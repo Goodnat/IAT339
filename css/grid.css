@@ -249,6 +249,49 @@ div.order-summary div.container {
     min-width: 50%;
 }
 
+div.select-size {
+    padding-top: 8%;
+    padding-bottom: 4%;
+}
+div.select-size p.subheader {
+    margin-bottom: 1.25rem;
+}
+
+label.size-and-price {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+
+    padding: 0 2em;
+    margin-bottom: 0.5em;
+}
+
+.size-and-price .container-item {
+    padding: 0.5rem;
+}
+
+.size-and-price .checkbox {
+	margin-bottom: 0;
+	position: absolute;
+	bottom: -2em;
+	right: -5em;
+
+	opacity: 0;
+}
+
+.size-and-price:hover,
+.size-and-price:active,
+.size-and-price:focus {
+    /*border-bottom: 1px dotted black;*/
+    background-color: #ffe2bc;
+}
+
+.size-and-price .checkbox:checked ~ .size-option {
+	border-bottom: 1.5px solid #91640f;
+	color: #91640f;
+	font-weight: bold;
+}
+
 /* Customer reviews */
 
 .review-overall-2 {

@@ -355,23 +355,8 @@ img.security-code {
   margin-bottom: 5%;
 }
 
-div.select-size {
-    padding-top: 8%;
-    padding-bottom: 4%;
-}
-
-.size-and-price:hover {
-    border-bottom: 1px dotted black;
-}
-.size-and-price a:focus {
-    background-color: #FFE2BC;
-}
-
-.size-and-price .container-item {
-    padding-bottom: 0.25rem;
-}
-.product-image{
-  position:relative;
+.product-image {
+    position: relative;
 }
 
 .product-image-info{
