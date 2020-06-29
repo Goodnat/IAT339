@@ -363,11 +363,43 @@ div.select-size {
 .size-and-price:hover {
     border-bottom: 1px dotted black;
 }
+.size-and-price>p:focus {
+    background-color: yellow;
+}
 
 .size-and-price .container-item {
     padding-bottom: 0.25rem;
 }
+.product-image{
+  position:relative;
+}
 
+.product-image-info{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:#ffffff00;
+  visibility: hidden;
+  transition: all 0.2s;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0)
+}
+
+.product-image:hover .product-image-info{
+  visibility: visible;
+  background-color:#ffffffaa;
+  transform: scale(1)
+}
+
+.product-image-info>span{
+  text-align: center;
+  line-height: 2.5;
+  padding: 2em;
+  font-size: 10pt;
+}
 /* Sales Slidershow */
 
 .sales-slider {
