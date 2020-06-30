@@ -6,33 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Top Navigation */
-nav {
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-  padding: 0;
-}
-
-nav img{
-  width:3rem;
-}
-
-nav ul {
-	list-style-type: none;
-	text-transform: uppercase;
-}
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #555;
-}
-
-nav.top-nav ul li a{
+/*nav.top-nav ul li a{
   position:relative;
   z-index: 1;
 }
@@ -64,13 +38,8 @@ nav.top-nav ul li :hover::after{
   visibility: visible;
   height: 2rem;
   width:2rem;
-}
+}*/
 
-.nav-icon, .h1-mobile {
-	display: none;
-}
-
-header.container,
 footer {
   background-color: #FFE2BC;
   padding-top: 2%;
