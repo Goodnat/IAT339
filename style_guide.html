@@ -192,44 +192,40 @@
 				<section>
 					<h4>Module: Top navigation</h4>
 
-					<header>
-						<nav class="top-nav">
-							<ul class="nav-links">
-								<li><a href="about.html">ABOUT</a></li>
-								<li><a href="products.html">SHOP</a></li>
-								<li><h1><a href="index.html">P.F</a></h1></li>
-								<li><a href="contact.html">CONTACT</a></li>
-								<li><a href="checkout.html">CART(0)</a></li>
-							</ul>
+					<header class="nav">
+						<a href="index.html" class="mobile-brand">P.F</a>
+
+						<label for="toggle">&#9776;</label>
+						<input type="checkbox" id="toggle">
+
+						<nav class="menu">
+							<a href="about.html">ABOUT</a>
+							<a href="products.html">SHOP</a>
+							<a href="index.html" class="brand">P.F</a>
+							<a href="contact.html">CONTACT</a>
+							<a href="checkout.html">CART(0)</a>
 						</nav>
-						<div class="burger">
-							<div class="line1"></div>
-							<div class="line2"></div>
-							<div class="line3"></div>
-						</div>
+
 					</header>
 
 					<div class="container">
 
 						<code class="container-item html">
 							HTML:<br>
-							&lt;header&gt;<br>
+							&lt;header class="nav"&gt;<br>
 							<br>
-							&nbsp;&lt;nav class="top-nav"&gt;<br>
-							&nbsp;&nbsp;&lt;ul&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;P.F&lt;/h1&gt;&lt;/a&gt;&lt;/li&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
-							&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Cart(0)&lt;/a&gt;&lt;/li&gt;<br>
-							&nbsp;&nbsp;&lt;/ul&gt;<br>
+							&nbsp;&lt;a href="index.html" class="mobile-brand"&gt;P.F&lt;/a&gt;<br>
+							<br>
+							&nbsp;&lt;label for="toggle"&gt;&#9776;&lt;/label&gt;<br>
+							&nbsp;&lt;input type="checkbox" id="toggle"&gt;<br>
+							<br>
+							&nbsp;&lt;nav class="menu"&gt;<br>
+							&nbsp;&nbsp;&lt;a href="about.html"&gt;About&lt;/a&gt;<br>
+							&nbsp;&nbsp;&lt;a href="products.html"&gt;Shop&lt;/a&gt;<br>
+							&nbsp;&nbsp;&lt;a href="index.html"&gt;P.F&lt;/a&gt;<br>
+							&nbsp;&nbsp;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;<br>
+							&nbsp;&nbsp;&lt;a href="checkout.html"&gt;Cart(0)&lt;/a&gt;<br>
 							&nbsp;&lt;/nav&gt;<br>
-							<br>
-							&nbsp;&lt;div class="burger"&gt;<br>
-							&nbsp;&nbsp;&lt;div class="line1"&gt;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class="line2"&gt;&lt;/div&gt;<br>
-							&nbsp;&nbsp;&lt;div class="line3"&gt;&lt;/div&gt;<br>
-							&nbsp;&lt;/div&gt;<br>
 							<br>
 							&lt;/header&gt;<br>
 						</code>
@@ -348,55 +344,73 @@
 				</section> <!-- end of product detailed listing -->
 
 				<section>
-					<h4>Module: Checkout - Shipping Address Form</h4>
+					<h4>Module: Checkout - Payment</h4>
 
-					<div class="container-item billing-details">
-		        		
-		        		<form method="post" action="#">
+					<div class="container">
 
-		        			<label for="first-name">First Name</label>
-		        			<input type="text" id="first-name">
-		        			<label for="last-name">Last Name</label>
-		        			<input type="text" id="last-name">
+						<div class="payment container-item">
+		        			<h2>Payment</h2>
+		        			<form method="post" action="#">
+		        				<label for="card-number">Card number</label>
+		        				<input type="text" id="card-number">
 
-		        			<label for="address">Street address</label>
-		        			<input type="text" id="address">
+		        				<label for="expiry-date">Expiry date</label>
+		        				<input type="text" id="expiry-date" placeholder="MM/YY">
+		        				
+		        				<div class="tooltip">
+		        					<label for="security-code">
+		        						Security code 
+		        						<img src="img/question.png" alt="What's security code?" class="security-code">
+		        					</label>
+		        					<span class="tooltip-text">
+		        						It's usually a 3- or 4- digit number printed on the back of a credit card (usually in the signature field).
+		        					</span>
+		        				</div>
 
-		        			<label for="city">City</label>
-		        			<div class="input-with-arrow">
-			        			<input type="text" id="city" value="Burnaby">
-			        			<img src="img/arrow-down.png" alt="Click it to see more options.">
-			        		</div>
+		        				<input type="text" id="security-code" placeholder="000">
 
-		        			<label for="province">Province</label>
-		        			<div class="input-with-arrow">
-		        				<input type="text" id="province" value="BC">
-		        				<img src="img/arrow-down.png" alt="Click it to see more options.">
-			        		</div>
+		        			</form>
 
-		        			<label for="country-region">Country/Region</label>
-		        			<div class="input-with-arrow">
-		        				<input type="text" id="country-region" value="Canada">
-		        				<img src="img/arrow-down.png" alt="Click it to see more options.">
-			        		</div>
+		        			<a href="thank_you.html" class="button-1 place-an-order" role="button">
+		                    	<span>Place an order</span>
+		                	</a>
+		        		</div>
 
-		        			<label for="postal-code">Postal code</label>
-		        			<input type="text" id="postal-code">
-
-		        			<label for="phone">Phone number</label>
-		        			<input type="text" id="phone">
-
-		        			<label for="email-address">Email address</label>
-		        			<input type="email" id="email-address" placeholder="example@gmail.com">
-
-		        		</form>
-		        	</div>
-
-		        	<div class="container">
 						<code class="container-item html">
 							HTML:<br>
-							
+							&lt;div class="payment"&gt;<br>
+							<br>
+							&nbsp;&lt;h2&gt;Payment&lt;/h2&gt;<br>
+							<br>
+							&nbsp;&lt;form method="post" action="#"&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;label for="card-number"&gt;Card number&lt;/label&gt;<br>
+							&nbsp;&nbsp;&lt;input type="text" id="card-number"&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;label for="expiry-date"&gt;Expiry date&lt;/label&gt;<br>
+							&nbsp;&nbsp;&lt;input type="text" id="expiry-date" placeholder="MM/YY"&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;div class="tooltip"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;label for="security-code"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Security code<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/question.png" alt="What's security code?" class="security-code"&gt;<br>
+		        			&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br>
+		        			&nbsp;&nbsp;&nbsp;&lt;span class="tooltip-text"&gt;<br>
+		        			&nbsp;&nbsp;&nbsp;&nbsp;It's usually a 3- or 4- digit number printed on the back of a credit card (usually in the signature field).<br>
+		        			&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+							&nbsp;&nbsp;&lt;/div&gt;<br>
+							<br>
+							&nbsp;&nbsp;&lt;input type="text" id="security-code" placeholder="000"&gt;<br>
+							<br>
+							&nbsp;&lt;/form&gt;<br>
+							<br>
+							&nbsp;&lt;a href="thank_you.html" class="button-1 place-an-order" role="button"&gt;<br>
+							&nbsp;&nbsp;&lt;span&gt;Place an order&lt;/span&gt;<br>
+							&nbsp;&lt;/a&gt;<br>
+							<br>
+							&lt;/div&gt;
 						</code>
+
 					</div>
 
 		        </section> <!-- end of shipping address -->
