@@ -470,6 +470,52 @@ footer div.resources p {
 }
 
 
+/* Popup Block on Product Detail Page */
+
+.popup .overlay-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 1;
+	display: none;
+}
+.popup .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%) scale(0);
+	background-color: white;
+	width: 60%;
+	height: auto;
+	z-index: 2;
+	text-align: center;
+	padding: 2rem;
+	transition: all .2s ease-in-out;
+}
+.popup .close-btn {
+	cursor: pointer;
+	position: absolute;
+	top: -1.5rem;
+	right: -1.5rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	font-size: 2.25rem;
+	line-height: 1.6;
+	text-align: center;
+	background-color: rgb( 145, 100, 15);
+	border-radius: 50%;
+	color: white;
+}
+.popup.active .overlay-bg {
+	display: block;
+}
+.popup.active .content {
+	transform: translate( -50%, -50%) scale(1);
+}
+
 
 /*************************** For Mobile Screen ***************************/
 
@@ -510,7 +556,7 @@ footer div.resources p {
 	.about1, .about2,
 	.product, .review-intro, .review-detail,
 	.contact1, .location, .contact3,
-	.checkout {
+	.checkout, footer .container {
 		-webkit-flex-flow: column nowrap;
 		-ms-flex-flow: column nowrap;
 		flex-flow: column nowrap;
@@ -579,6 +625,13 @@ footer div.resources p {
 		width: 100%;
 		padding-top: 0;
 		padding-bottom: 2rem;
+	}
+
+	/* Footer */
+
+	footer .container-item {
+		width: 100%;
+		padding-top: 0;
 	}
 }
 

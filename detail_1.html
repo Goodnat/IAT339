@@ -96,8 +96,19 @@
                 </section>
 
                 <!-- Buttons -->
-                <a href="#" class="button-1" role="button">Add to bag</a>
+                <a href="#" class="button-1" role="button" onclick="popup()">Add to bag</a>
                 <a href="#" class="button-2" role="button">Add to wishlist</a>
+
+                <!-- Popup Content -->
+                <div class="popup" id="popup">
+                    <div class="overlay-bg"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="popup()">&#9747;</div>
+                        <h3>You have successfully added this perfume into your cart.</h3>
+                        <a href="checkout.html" class="button-1" role="button">Checkout</a>
+                        <a href="products.html" class="button-2" role="button">Continue shopping</a>
+                    </div>
+                </div>
 
 			</div> <!-- End of .product-right -->
 
