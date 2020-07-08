@@ -490,53 +490,16 @@ ul.sales-slider-content li {
   margin: 2% 0;
 }
 
-/*************************** Burger Icon ***************************/
-
-
 /*************************** For Mobile Screen ***************************/
 
-@media (max-width: 680px) {
+@media (max-width: 480px) {
 
-  .burger div{
-    width:25px;
-    height:5px;
-    background-color:black;
-    margin:5px;
-  }
-  .burger{
-    position: relative;
-    height:50px;
-    z-index: 2;
-  }
-  .top-nav .nav-links{
-    position: fixed;
-    right:0px;
-    top:-20px;
-    background: #e4e4e4;
-    height:110vh;
-    width:100%;
-    flex-direction: column;
-    clip-path: circle(0px at 10% -5%);
-    -webkit-clip-path: circle(0px at 10% -5%);
-    transition:all 1s ease-out;
-    z-index: 1;
-  }
-  .nav-links.open{
-    clip-path: circle(1200px at 10% -5%);
-    -webkit-clip-path: circle(1200px at 10% -5%);
+  /* Thank-you page */
+
+  .thank-you {
+    margin: 5% 0 8%;
   }
 
-	.nav-icon {
-		display: inline-block;
-		padding-top: 1.25rem;
-    padding-right: 1rem;
-    width: 3.5rem;
-	}
-
-	.h1-mobile {
-		display: inline-block;
-		max-width: 80%;
-	}
 }
 
 

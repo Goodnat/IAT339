@@ -627,6 +627,12 @@ footer div.resources p {
 		padding-bottom: 2rem;
 	}
 
+	/* Product Detail page */
+
+	.popup .content {
+		width: 80%;
+	}
+
 	/* Footer */
 
 	footer .container-item {
