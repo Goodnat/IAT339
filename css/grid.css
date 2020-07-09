@@ -11,7 +11,6 @@
 /* Parent */
 
 .container,
-.top-nav ul,
 header .menu {
 	display: -webkit-flex; /* For support in a series of Webkit browsers */
 	display: -ms-flex; /* For support in IE 10 */
@@ -46,7 +45,6 @@ div.order-summary div.container {
 	justify-content: space-between;
 }
 
-.top-nav ul,
 header .menu {
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -557,9 +555,12 @@ footer div.resources p {
 	.product, .review-intro, .review-detail,
 	.contact1, .location, .contact3,
 	.checkout, footer .container {
-		-webkit-flex-flow: column nowrap;
+		/*-webkit-flex-flow: column nowrap;
 		-ms-flex-flow: column nowrap;
-		flex-flow: column nowrap;
+		flex-flow: column nowrap;*/
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 
 	.index2 .container-item {
@@ -589,10 +590,6 @@ footer div.resources p {
 
 	.product-left img {
 		width: 100%;
-	}
-
-	.review-bottom {
-		overflow: visible;
 	}
 
 	/* Shop all page */
